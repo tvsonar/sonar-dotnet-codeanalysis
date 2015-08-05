@@ -146,7 +146,7 @@
     <Compile Include="Rules\InsecureEncryptionAlgorithmTest.cs" />
     <Compile Include="Rules\SillyBitwiseOperationTest.cs" />
     <Compile Include="Rules\ConstructorOverridableCallTest.cs" />
-    <Compile Include="Rules\FieldShadowsParentFieldTest.cs" />
+    <Compile Include="Rules\MemberShadowsParentMemberTest.cs" />
     <Compile Include="Rules\ClassWithOnlyStaticMemberTest.cs" />
     <Compile Include="Rules\StaticFieldWrittenFromInstanceMemberTest.cs" />
     <Compile Include="Rules\ClassShouldNotBeAbstractTest.cs" />
@@ -346,7 +346,7 @@
     <None Include="TestCases\ConstructorOverridableCall.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="TestCases\FieldShadowsParentField.cs">
+    <None Include="TestCases\MemberShadowsParentMember.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="TestCases\ClassWithOnlyStaticMember.cs">

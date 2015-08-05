@@ -7,7 +7,853 @@
   "Issues": [
     {
       "RuleId": "S2387",
-      "Locations": []
+      "FullMessage": "\"Settings\" is the name of a member in \"ClusterRouterActor\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\akka.net-dev_8b00423b29\\src\\core\\Akka.Cluster\\Routing\\ClusterRoutingConfig.cs",
+            "Region": {
+              "StartLine": 479,
+              "EndLine": 479,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Settings\" is the name of a member in \"ClusterRouterActor\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\akka.net-dev_8b00423b29\\src\\core\\Akka.Cluster\\Routing\\ClusterRoutingConfig.cs",
+            "Region": {
+              "StartLine": 569,
+              "EndLine": 569,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Value\" is the name of a member in \"Either\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\akka.net-dev_8b00423b29\\src\\core\\Akka\\Util\\Either.cs",
+            "Region": {
+              "StartLine": 60,
+              "EndLine": 60,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Value\" is the name of a member in \"Either\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\akka.net-dev_8b00423b29\\src\\core\\Akka\\Util\\Either.cs",
+            "Region": {
+              "StartLine": 82,
+              "EndLine": 82,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"reset\" is the name of a member in \"ChocolateyPinCommandSpecsBase\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\choco-master_3a5f2b6843\\src\\chocolatey.tests\\infrastructure.app\\commands\\ChocolateyPinCommandSpecs.cs",
+            "Region": {
+              "StartLine": 131,
+              "EndLine": 131,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"reset\" is the name of a member in \"ChocolateyPinCommandSpecsBase\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\choco-master_3a5f2b6843\\src\\chocolatey.tests\\infrastructure.app\\commands\\ChocolateyPinCommandSpecs.cs",
+            "Region": {
+              "StartLine": 391,
+              "EndLine": 391,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Add\" is the name of a member in \"Collection\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\choco-master_3a5f2b6843\\src\\chocolatey\\infrastructure\\commandline\\Options.cs",
+            "Region": {
+              "StartLine": 585,
+              "EndLine": 585,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Add\" is the name of a member in \"Collection\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\choco-master_3a5f2b6843\\src\\chocolatey\\infrastructure\\commandline\\Options.cs",
+            "Region": {
+              "StartLine": 608,
+              "EndLine": 608,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Add\" is the name of a member in \"Collection\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\choco-master_3a5f2b6843\\src\\chocolatey\\infrastructure\\commandline\\Options.cs",
+            "Region": {
+              "StartLine": 613,
+              "EndLine": 613,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Add\" is the name of a member in \"Collection\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\choco-master_3a5f2b6843\\src\\chocolatey\\infrastructure\\commandline\\Options.cs",
+            "Region": {
+              "StartLine": 623,
+              "EndLine": 623,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Add\" is the name of a member in \"Collection\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\choco-master_3a5f2b6843\\src\\chocolatey\\infrastructure\\commandline\\Options.cs",
+            "Region": {
+              "StartLine": 628,
+              "EndLine": 628,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Add\" is the name of a member in \"Collection\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\choco-master_3a5f2b6843\\src\\chocolatey\\infrastructure\\commandline\\Options.cs",
+            "Region": {
+              "StartLine": 674,
+              "EndLine": 674,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Add\" is the name of a member in \"Collection\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\choco-master_3a5f2b6843\\src\\chocolatey\\infrastructure\\commandline\\Options.cs",
+            "Region": {
+              "StartLine": 679,
+              "EndLine": 679,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Add\" is the name of a member in \"Collection\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\choco-master_3a5f2b6843\\src\\chocolatey\\infrastructure\\commandline\\Options.cs",
+            "Region": {
+              "StartLine": 684,
+              "EndLine": 684,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Add\" is the name of a member in \"Collection\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\choco-master_3a5f2b6843\\src\\chocolatey\\infrastructure\\commandline\\Options.cs",
+            "Region": {
+              "StartLine": 689,
+              "EndLine": 689,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"InnerException\" is the name of a member in \"Exception\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Mvc-dev_b245996949\\src\\Microsoft.AspNet.JsonPatch\\Exceptions\\JsonPatchExceptionBase.cs",
+            "Region": {
+              "StartLine": 10,
+              "EndLine": 10,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Add\" is the name of a member in \"Collection\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Mvc-dev_b245996949\\src\\Microsoft.AspNet.Mvc.Abstractions\\ModelBinding\\ModelErrorCollection.cs",
+            "Region": {
+              "StartLine": 12,
+              "EndLine": 12,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Add\" is the name of a member in \"Collection\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Mvc-dev_b245996949\\src\\Microsoft.AspNet.Mvc.Abstractions\\ModelBinding\\ModelErrorCollection.cs",
+            "Region": {
+              "StartLine": 17,
+              "EndLine": 17,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"ToString\" is the name of a member in \"Object\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Mvc-dev_b245996949\\src\\Microsoft.AspNet.Mvc.Extensions\\Rendering\\Html\\TagBuilder.cs",
+            "Region": {
+              "StartLine": 187,
+              "EndLine": 187,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"NewMethod\" is the name of a member in \"BaseController\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Mvc-dev_b245996949\\test\\Microsoft.AspNet.Mvc.Core.Test\\ApplicationModel\\DefaultApplicationModelProviderTest.cs",
+            "Region": {
+              "StartLine": 899,
+              "EndLine": 899,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Dispose\" is the name of a member in \"Controller\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Mvc-dev_b245996949\\test\\Microsoft.AspNet.Mvc.Core.Test\\ApplicationModel\\DefaultApplicationModelProviderTest.cs",
+            "Region": {
+              "StartLine": 923,
+              "EndLine": 923,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Dispose\" is the name of a member in \"Controller\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Mvc-dev_b245996949\\test\\Microsoft.AspNet.Mvc.Core.Test\\ApplicationModel\\DefaultApplicationModelProviderTest.cs",
+            "Region": {
+              "StartLine": 928,
+              "EndLine": 928,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Dispose\" is the name of a member in \"BaseClass\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Mvc-dev_b245996949\\test\\Microsoft.AspNet.Mvc.Core.Test\\ApplicationModel\\DefaultApplicationModelProviderTest.cs",
+            "Region": {
+              "StartLine": 976,
+              "EndLine": 976,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Property\" is the name of a member in \"BaseModelWithHiding\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Mvc-dev_b245996949\\test\\Microsoft.AspNet.Mvc.Core.Test\\ModelBinding\\Metadata\\DefaultModelMetadataProviderTest.cs",
+            "Region": {
+              "StartLine": 190,
+              "EndLine": 190,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"TestProperty\" is the name of a member in \"BaseModel\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Mvc-dev_b245996949\\test\\Microsoft.AspNet.Mvc.Core.Test\\ModelBinding\\Metadata\\ModelAttributesTest.cs",
+            "Region": {
+              "StartLine": 204,
+              "EndLine": 204,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"TestProperty\" is the name of a member in \"BaseViewModel\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Mvc-dev_b245996949\\test\\Microsoft.AspNet.Mvc.Core.Test\\ModelBinding\\Metadata\\ModelAttributesTest.cs",
+            "Region": {
+              "StartLine": 228,
+              "EndLine": 228,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"length\" differs only by case from \"Length\" in \"MemoryStream\".",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Nancy-master_6775d18fc5\\src\\Nancy.Tests\\Unit\\IO\\RequestStreamFixture.cs",
+            "Region": {
+              "StartLine": 576,
+              "EndLine": 576,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"position\" differs only by case from \"Position\" in \"MemoryStream\".",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Nancy-master_6775d18fc5\\src\\Nancy.Tests\\Unit\\IO\\RequestStreamFixture.cs",
+            "Region": {
+              "StartLine": 577,
+              "EndLine": 577,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Model\" is the name of a member in \"NancySparkView\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Nancy-master_6775d18fc5\\src\\Nancy.ViewEngines.Spark\\NancySparkView.cs",
+            "Region": {
+              "StartLine": 82,
+              "EndLine": 82,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"position\" differs only by case from \"Position\" in \"Stream\".",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Nancy-master_6775d18fc5\\src\\Nancy\\HttpMultipartSubStream.cs",
+            "Region": {
+              "StartLine": 14,
+              "EndLine": 14,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"message\" differs only by case from \"Message\" in \"Exception\".",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\Nancy-master_6775d18fc5\\src\\Nancy\\ViewEngines\\ViewNotFoundException.cs",
+            "Region": {
+              "StartLine": 16,
+              "EndLine": 16,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Overlap\" is the name of a member in \"OrderedSpans\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\nuget\\src\\VsConsole\\Console\\Console\\OrderedSpans.cs",
+            "Region": {
+              "StartLine": 159,
+              "EndLine": 159,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Add\" is the name of a member in \"OrderedSpans\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\nuget\\src\\VsConsole\\Console\\Console\\OrderedSpans.cs",
+            "Region": {
+              "StartLine": 175,
+              "EndLine": 175,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Overlap\" is the name of a member in \"OrderedTupleSpans\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\nuget\\src\\VsConsole\\Console\\Console\\OrderedSpans.cs",
+            "Region": {
+              "StartLine": 189,
+              "EndLine": 189,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"GetHashCode\" is the name of a member in \"Object\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\PcapDotNet-71480\\PcapDotNet.Base\\Sequence.cs",
+            "Region": {
+              "StartLine": 13,
+              "EndLine": 13,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"GetHashCode\" is the name of a member in \"Object\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\PcapDotNet-71480\\PcapDotNet.Base\\Sequence.cs",
+            "Region": {
+              "StartLine": 26,
+              "EndLine": 26,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"GetHashCode\" is the name of a member in \"Object\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\PcapDotNet-71480\\PcapDotNet.Base\\Sequence.cs",
+            "Region": {
+              "StartLine": 37,
+              "EndLine": 37,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"ToString\" is the name of a member in \"ValueType\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\PcapDotNet-71480\\PcapDotNet.Base\\SerialNumber32.cs",
+            "Region": {
+              "StartLine": 120,
+              "EndLine": 120,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"ToString\" is the name of a member in \"ValueType\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\PcapDotNet-71480\\PcapDotNet.Base\\UInt128.cs",
+            "Region": {
+              "StartLine": 634,
+              "EndLine": 634,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"ToString\" is the name of a member in \"ValueType\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\PcapDotNet-71480\\PcapDotNet.Base\\UInt128.cs",
+            "Region": {
+              "StartLine": 648,
+              "EndLine": 648,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"ToString\" is the name of a member in \"ValueType\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\PcapDotNet-71480\\PcapDotNet.Base\\UInt48.cs",
+            "Region": {
+              "StartLine": 555,
+              "EndLine": 555,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"ToString\" is the name of a member in \"ValueType\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\PcapDotNet-71480\\PcapDotNet.Base\\UInt48.cs",
+            "Region": {
+              "StartLine": 563,
+              "EndLine": 563,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"read\" differs only by case from \"Read\" in \"Stream\".",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\sharpcompress_b855fd5bf0d1\\SharpCompress.Test\\TestStream.cs",
+            "Region": {
+              "StartLine": 8,
+              "EndLine": 8,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"write\" differs only by case from \"Write\" in \"Stream\".",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\sharpcompress_b855fd5bf0d1\\SharpCompress.Test\\TestStream.cs",
+            "Region": {
+              "StartLine": 9,
+              "EndLine": 9,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"seek\" differs only by case from \"Seek\" in \"Stream\".",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\sharpcompress_b855fd5bf0d1\\SharpCompress.Test\\TestStream.cs",
+            "Region": {
+              "StartLine": 10,
+              "EndLine": 10,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"position\" differs only by case from \"Position\" in \"Stream\".",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\sharpcompress_b855fd5bf0d1\\SharpCompress\\Compressor\\Filters\\BCJ2Filter.cs",
+            "Region": {
+              "StartLine": 17,
+              "EndLine": 17,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"read\" differs only by case from \"Read\" in \"Stream\".",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\sharpcompress_b855fd5bf0d1\\SharpCompress\\Compressor\\Filters\\Filter.cs",
+            "Region": {
+              "StartLine": 17,
+              "EndLine": 17,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"Encode\" is the name of a member in \"LenEncoder\"",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\sharpcompress_b855fd5bf0d1\\SharpCompress\\Compressor\\LZMA\\LzmaEncoder.cs",
+            "Region": {
+              "StartLine": 269,
+              "EndLine": 269,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"position\" differs only by case from \"Position\" in \"Stream\".",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\sharpcompress_b855fd5bf0d1\\SharpCompress\\Compressor\\LZMA\\LzmaStream.cs",
+            "Region": {
+              "StartLine": 18,
+              "EndLine": 18,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S2387",
+      "FullMessage": "\"position\" differs only by case from \"Position\" in \"Stream\".",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\sharpcompress_b855fd5bf0d1\\SharpCompress\\Compressor\\PPMd\\PpmdStream.cs",
+            "Region": {
+              "StartLine": 15,
+              "EndLine": 15,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
     }
   ]
 }

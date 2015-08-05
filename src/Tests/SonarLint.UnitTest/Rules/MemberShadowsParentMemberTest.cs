@@ -24,13 +24,13 @@ using SonarLint.Rules;
 namespace SonarLint.UnitTest.Rules
 {
     [TestClass]
-    public class FieldShadowsParentFieldTest
+    public class MemberShadowsParentMemberTest
     {
         [TestMethod]
         [TestCategory("Rule")]
-        public void FieldShadowsParentField()
+        public void MemberShadowsParentMember()
         {
-            Verifier.Verify(@"TestCases\FieldShadowsParentField.cs", new FieldShadowsParentField());
+            Verifier.Verify(@"TestCases\MemberShadowsParentMember.cs", new MemberShadowsParentMember());
         }
     }
 }

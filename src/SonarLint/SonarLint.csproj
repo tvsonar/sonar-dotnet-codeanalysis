@@ -102,7 +102,7 @@
     <Compile Include="Rules\InsecureEncryptionAlgorithm.cs" />
     <Compile Include="Rules\SillyBitwiseOperation.cs" />
     <Compile Include="Rules\ConstructorOverridableCall.cs" />
-    <Compile Include="Rules\FieldShadowsParentField.cs" />
+    <Compile Include="Rules\MemberShadowsParentMember.cs" />
     <Compile Include="Rules\StaticFieldWrittenFromInstanceMember.cs" />
     <Compile Include="Rules\ClassShouldNotBeAbstract.cs" />
     <Compile Include="Rules\EqualityOnModulus.cs" />

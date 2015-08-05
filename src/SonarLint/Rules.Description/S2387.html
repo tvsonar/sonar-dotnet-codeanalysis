@@ -1,43 +1,79 @@
 <p>
-    Having a variable with the same name in two unrelated classes is fine, but do the same thing within a class hierarchy
-    and you'll get confusion at best, chaos at worst. Perhaps even worse is the case where a child class field varies from 
-    the name of a parent class only by case.
+    Shadowing parent class members by creating fields, properties and methods with the same signatures as non-<code>virtual</code>
+    parent class members can result in seemingly strange behavior if an instance of the child class is cast to the parent class.
+    In such cases, the parent class' code will be executed instead of the code in the child class, confusing callers and
+    potentially causing hard-to-find bugs.
 </p>
 <p>
-    This rule ignores <code>private</code> parent class members, but in all other such cases, the child class field should 
-    be renamed.
+    Instead the child class member should be renamed and the issue that created the need for shadowing should be resolved.
+</p>
+<p>
+    This rule ignores <code>private</code> parent class members, and any method named <code>Equals</code>.
 </p>
 
 <h2>Noncompliant Code Example</h2>
 <pre>
-public class Fruit 
+public class Fruit
 {
   protected Season ripe;
   protected Color flesh;
 
   // ...
+
+  public double GetCost()
+  {
+    return 3.5;
+  }
 }
 
-public class Raspberry : Fruit 
+public class Raspberry : Fruit
 {
   private bool ripe;  // Noncompliant
   private static Color FLESH; // Noncompliant
+
+  public new double GetCost()  // Noncompliant
+  {
+    return 7.5;
+  }
 }
+
+// ...
+var r = new Raspberry();
+var f = (Fruit) r;
+Console.WriteLine(r.GetCost());  // prints 7.5
+Console.WriteLine(f.GetCost());  // prints 3.5; there's only one instance but different code executes depending on cast
 </pre>
 
 <h2>Compliant Solution</h2>
 <pre>
-public class Fruit 
+public class Fruit
 {
   protected Season ripe;
   protected Color flesh;
 
   // ...
+
+  public double GetCost()
+  {
+    return 3.5;
+  }
 }
 
-public class Raspberry : Fruit 
+public class Raspberry : Fruit
 {
   private bool ripened;
   private static Color FLESH_COLOR;
+
+  public double GetInflatedCost()
+  {
+    return 7.5;
+  }
 }
+
+// ...
+var r = new Raspberry();
+var f = (Fruit) r;
+Console.WriteLine(r.GetCost());  // prints 3.5
+Console.WriteLine(f.GetCost());  // prints 3.5; same code executes every time
+Console.WriteLine(r.GetInflatedCost()); // prints 7.5
 </pre>

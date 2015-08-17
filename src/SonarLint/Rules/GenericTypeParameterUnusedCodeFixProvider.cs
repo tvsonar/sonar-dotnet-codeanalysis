@@ -26,6 +26,7 @@ using System.Linq;
 using Microsoft.CodeAnalysis.CodeActions;
 using System.Threading;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using System.Collections.Generic;
 
 namespace SonarLint.Rules
 {
@@ -48,7 +49,6 @@ namespace SonarLint.Rules
         public sealed override async Task RegisterCodeFixesAsync(CodeFixContext context)
         {
             var root = await context.Document.GetSyntaxRootAsync(context.CancellationToken).ConfigureAwait(false);
-
             var diagnostic = context.Diagnostics.First();
             var diagnosticSpan = diagnostic.Location.SourceSpan;
             var syntaxNode = root.FindNode(diagnosticSpan) as TypeParameterSyntax;
@@ -72,42 +72,50 @@ namespace SonarLint.Rules
                 reference => reference.GetSyntax());
 
             var data = references.Select(reference =>
-                new
+                new SyntaxDocumentPair
                 {
-                    Syntax = reference,
+                    Syntax = reference as TypeParameterSyntax,
                     Document = context.Document.Project.Solution.GetDocument(reference.SyntaxTree)
                 });
 
-            var allDiagnostics = (await context.Document.Project.GetCompilationAsync(context.CancellationToken).ConfigureAwait(false))
-                .GetDiagnostics();
+            //todo: fix all not working, we need a custom batch fixer.
 
-            var filteredDiagnostics = allDiagnostics
-                .Where(d=>d.Id == GenericTypeParameterUnused.DiagnosticId);
-
-
-            foreach (var item in data)
-            {
-                var ds = filteredDiagnostics.Where(d =>
-                        d.Location.SourceTree == item.Syntax.SyntaxTree &&
-                        d.Location.SourceSpan == item.Syntax.Span);
-                if (ds.Any())
-                {
-                    context.RegisterCodeFix(
-                    CodeAction.Create(
-                        Title,
-                        c => RemoveUnusedCode(item.Document, item.Syntax, c),
-                        Title),
-                    ds
-                    );
-                }
-            }
+            context.RegisterCodeFix(
+                CodeAction.Create(
+                    Title,
+                    c => RemoveUnusedCode(data, context.Document.Project.Solution, c)),
+                diagnostic
+            );
         }
 
-        private static async Task<Document> RemoveUnusedCode(Document document, SyntaxNode syntaxNode, CancellationToken cancellationToken)
+        private static async Task<Solution> RemoveUnusedCode(IEnumerable<SyntaxDocumentPair> data, Solution s, CancellationToken cancellationToken)
         {
-            var root = await document.GetSyntaxRootAsync(cancellationToken);
-            var newRoot = root.RemoveNode(syntaxNode, SyntaxRemoveOptions.KeepExteriorTrivia | SyntaxRemoveOptions.KeepEndOfLine);
-            return document.WithSyntaxRoot(newRoot);
+            var newSolution = s;
+            foreach (var item in data)
+            {
+                var root = await item.Document.GetSyntaxRootAsync(cancellationToken);
+                SyntaxNode newRoot;
+
+                var list = (TypeParameterListSyntax)item.Syntax.Parent;
+
+                if (list.Parameters.Count == 1)
+                {
+                    newRoot = root.RemoveNode(list, SyntaxRemoveOptions.KeepExteriorTrivia | SyntaxRemoveOptions.KeepEndOfLine);
+                }
+                else
+                {
+                    newRoot = root.RemoveNode(item.Syntax, SyntaxRemoveOptions.KeepNoTrivia | SyntaxRemoveOptions.KeepEndOfLine);
+                }
+
+                newSolution = newSolution.WithDocumentText(item.Document.Id, newRoot.GetText());
+            }
+            return newSolution;
+        }
+
+        private class SyntaxDocumentPair
+        {
+            public TypeParameterSyntax Syntax { get; set; }
+            public Document Document { get; set; }
         }
     }
 }

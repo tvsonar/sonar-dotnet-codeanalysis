@@ -32,5 +32,16 @@ namespace SonarLint.UnitTest.Rules
         {
             Verifier.VerifyAnalyzer(@"TestCases\GenericTypeParameterUnused.cs", new GenericTypeParameterUnused());
         }
+
+        [TestMethod]
+        [TestCategory("CodeFix")]
+        public void GenericTypeParameterUnused_CodeFix()
+        {
+            Verifier.VerifyCodeFix(
+                @"TestCases\GenericTypeParameterUnused.cs",
+                @"TestCases\GenericTypeParameterUnused.Fixed.cs",
+                new GenericTypeParameterUnused(),
+                new GenericTypeParameterUnusedCodeFixProvider());
+        }
     }
 }

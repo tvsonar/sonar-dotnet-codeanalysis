@@ -32,5 +32,16 @@ namespace SonarLint.UnitTest.Rules
         {
             Verifier.VerifyAnalyzer(@"TestCases\ThreadStaticWithInitializer.cs", new ThreadStaticWithInitializer());
         }
+
+        [TestMethod]
+        [TestCategory("CodeFix")]
+        public void ThreadStaticWithInitializer_CodeFix()
+        {
+            Verifier.VerifyCodeFix(
+                @"TestCases\ThreadStaticWithInitializer.cs",
+                @"TestCases\ThreadStaticWithInitializer.Fixed.cs",
+                new ThreadStaticWithInitializer(),
+                new ThreadStaticWithInitializerCodeFixProvider());
+        }
     }
 }

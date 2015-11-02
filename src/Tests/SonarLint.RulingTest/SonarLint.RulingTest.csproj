@@ -530,6 +530,9 @@
     <None Include="Expected\VisualBasic\S2358.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Expected\VisualBasic\S2361.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Expected\VisualBasic\S2365.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

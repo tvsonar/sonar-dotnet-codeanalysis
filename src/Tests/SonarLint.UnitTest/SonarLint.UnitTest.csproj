@@ -136,6 +136,7 @@
     <Compile Include="Helpers\EquivalenceCheckerTest.cs" />
     <Compile Include="Common\MetricsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rules\ParameterUsesByRefTest.cs" />
     <Compile Include="Rules\PropertyWithArrayTypeTest.cs" />
     <Compile Include="Rules\ArrayInitializationMultipleStatementsTest.cs" />
     <Compile Include="Rules\ArrayCreationLongSyntaxTest.cs" />
@@ -874,6 +875,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="TestCases\PublicConstantField.vb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TestCases\ParameterUsesByRef.vb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

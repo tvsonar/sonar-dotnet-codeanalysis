@@ -275,6 +275,9 @@
     <None Include="Expected\CSharp\S1994.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Expected\CSharp\S1996.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Expected\CSharp\S2070.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -489,6 +492,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Expected\VisualBasic\S105.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Expected\VisualBasic\S1996.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Expected\VisualBasic\S2339.json">

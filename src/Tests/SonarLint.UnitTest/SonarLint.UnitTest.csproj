@@ -144,6 +144,7 @@
     <Compile Include="Rules\PublicConstantFieldTest.cs" />
     <Compile Include="Rules\StringConcatenationWithPlusTest.cs" />
     <Compile Include="Rules\NegatedIsExpressionTest.cs" />
+    <Compile Include="Rules\SingleTopLevelTypePerFileTest.cs" />
     <Compile Include="Rules\UnsignedTypesUsageTest.cs" />
     <Compile Include="Rules\ArrayDesignatorOnVariableTest.cs" />
     <Compile Include="Rules\IndexedPropertyWithMultipleParametersTest.cs" />
@@ -717,6 +718,9 @@
     <None Include="TestCases\PublicConstantField.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="TestCases\SingleTopLevelTypePerFile.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Compile Include="Verifier.cs" />
     <None Include="TestCases\UseCurlyBraces.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -874,6 +878,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="TestCases\PublicConstantField.vb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TestCases\SingleTopLevelTypePerFile.vb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

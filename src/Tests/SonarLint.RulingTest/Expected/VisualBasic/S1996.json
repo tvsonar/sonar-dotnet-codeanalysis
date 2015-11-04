@@ -1,0 +1,4412 @@
+{
+  "Version": "0.1",
+  "ToolInfo": {
+    "ToolName": "SonarLint.RulingTest",
+    "FileVersion": "1.0.0"
+  },
+  "Issues": [
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBADONETDataService\\LinqToSQL\\IUpdatableLinqToSql.vb",
+            "Region": {
+              "StartLine": 35,
+              "EndLine": 35,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBADONETDataService\\LinqToSQL\\IUpdatableLinqToSql.vb",
+            "Region": {
+              "StartLine": 252,
+              "EndLine": 252,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBADONETDataService\\LinqToSQL\\IUpdatableLinqToSql.vb",
+            "Region": {
+              "StartLine": 258,
+              "EndLine": 258,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBADONETDataService\\LinqToSQL\\IUpdatableLinqToSql.vb",
+            "Region": {
+              "StartLine": 264,
+              "EndLine": 264,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBADONETDataService\\LinqToSQL\\IUpdatableLinqToSql.vb",
+            "Region": {
+              "StartLine": 270,
+              "EndLine": 270,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBADONETDataService\\Samples.svc.vb",
+            "Region": {
+              "StartLine": 29,
+              "EndLine": 29,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBADONETDataService\\Samples.svc.vb",
+            "Region": {
+              "StartLine": 46,
+              "EndLine": 46,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBADONETDataService\\Samples.svc.vb",
+            "Region": {
+              "StartLine": 83,
+              "EndLine": 83,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBADONETDataService\\Samples.svc.vb",
+            "Region": {
+              "StartLine": 99,
+              "EndLine": 99,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBAzureWCFWorkerRole\\WorkerRole1\\MyService.vb",
+            "Region": {
+              "StartLine": 20,
+              "EndLine": 20,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBAzureWCFWorkerRole\\WorkerRole1\\MyService.vb",
+            "Region": {
+              "StartLine": 27,
+              "EndLine": 27,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBCreateLowIntegrityProcess\\NativeMethod.vb",
+            "Region": {
+              "StartLine": 170,
+              "EndLine": 170,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBCreateLowIntegrityProcess\\NativeMethod.vb",
+            "Region": {
+              "StartLine": 189,
+              "EndLine": 189,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBCreateLowIntegrityProcess\\NativeMethod.vb",
+            "Region": {
+              "StartLine": 581,
+              "EndLine": 581,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBExeCOMServer\\COMHelper.vb",
+            "Region": {
+              "StartLine": 27,
+              "EndLine": 27,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBExeCOMServer\\COMHelper.vb",
+            "Region": {
+              "StartLine": 74,
+              "EndLine": 74,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBExeCOMServer\\COMHelper.vb",
+            "Region": {
+              "StartLine": 217,
+              "EndLine": 217,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBExeCOMServer\\SimpleObject.vb",
+            "Region": {
+              "StartLine": 52,
+              "EndLine": 52,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBExeCOMServer\\SimpleObject.vb",
+            "Region": {
+              "StartLine": 161,
+              "EndLine": 161,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBExeCOMServer\\SimpleObject.vb",
+            "Region": {
+              "StartLine": 204,
+              "EndLine": 204,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBImpersonateUser\\ImpersonateUser.vb",
+            "Region": {
+              "StartLine": 34,
+              "EndLine": 34,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBImpersonateUser\\ImpersonateUser.vb",
+            "Region": {
+              "StartLine": 273,
+              "EndLine": 273,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBLinqExtension\\LinqToCSVForm.vb",
+            "Region": {
+              "StartLine": 31,
+              "EndLine": 31,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBLinqExtension\\LinqToCSVForm.vb",
+            "Region": {
+              "StartLine": 102,
+              "EndLine": 102,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBLinqToSQL\\SchoolDB.vb",
+            "Region": {
+              "StartLine": 25,
+              "EndLine": 25,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBLinqToSQL\\SchoolDB.vb",
+            "Region": {
+              "StartLine": 157,
+              "EndLine": 157,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBLinqToSQL\\SchoolDB.vb",
+            "Region": {
+              "StartLine": 228,
+              "EndLine": 228,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBLinqToSQL\\SchoolDB.vb",
+            "Region": {
+              "StartLine": 325,
+              "EndLine": 325,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level module declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBLinqToXml\\MainModule.vb",
+            "Region": {
+              "StartLine": 26,
+              "EndLine": 26,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBLinqToXml\\MainModule.vb",
+            "Region": {
+              "StartLine": 569,
+              "EndLine": 569,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBLinqToXml\\MainModule.vb",
+            "Region": {
+              "StartLine": 598,
+              "EndLine": 598,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBListFilesInDirectory\\NativeMethods.vb",
+            "Region": {
+              "StartLine": 30,
+              "EndLine": 30,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level module declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBListFilesInDirectory\\NativeMethods.vb",
+            "Region": {
+              "StartLine": 52,
+              "EndLine": 52,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBListFilesInDirectory\\NativeMethods.vb",
+            "Region": {
+              "StartLine": 80,
+              "EndLine": 80,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBRemotingClient\\ServerActivatedObjectProxy.vb",
+            "Region": {
+              "StartLine": 24,
+              "EndLine": 24,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBRemotingClient\\ServerActivatedObjectProxy.vb",
+            "Region": {
+              "StartLine": 46,
+              "EndLine": 46,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBRemotingClient\\ServerActivatedObjectProxy.vb",
+            "Region": {
+              "StartLine": 50,
+              "EndLine": 50,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBRemotingServer\\ServerActivatedObject.vb",
+            "Region": {
+              "StartLine": 44,
+              "EndLine": 44,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBRemotingServer\\ServerActivatedObject.vb",
+            "Region": {
+              "StartLine": 94,
+              "EndLine": 94,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBRemotingServer\\ServerActivatedObject.vb",
+            "Region": {
+              "StartLine": 107,
+              "EndLine": 107,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3Animation\\Easing.xaml.vb",
+            "Region": {
+              "StartLine": 17,
+              "EndLine": 17,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3Animation\\Easing.xaml.vb",
+            "Region": {
+              "StartLine": 49,
+              "EndLine": 49,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3DataBinding\\DAL\\DAL.vb",
+            "Region": {
+              "StartLine": 32,
+              "EndLine": 32,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3DataBinding\\DAL\\DAL.vb",
+            "Region": {
+              "StartLine": 64,
+              "EndLine": 64,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3DataBinding\\DAL\\DAL.vb",
+            "Region": {
+              "StartLine": 111,
+              "EndLine": 111,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3DataBinding\\GeneralScenarios.xaml.vb",
+            "Region": {
+              "StartLine": 34,
+              "EndLine": 34,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3DataBinding\\GeneralScenarios.xaml.vb",
+            "Region": {
+              "StartLine": 103,
+              "EndLine": 103,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3DeepZoom\\VBSL3DeepZoom\\MouseWheelHelper.vb",
+            "Region": {
+              "StartLine": 3,
+              "EndLine": 3,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3DeepZoom\\VBSL3DeepZoom\\MouseWheelHelper.vb",
+            "Region": {
+              "StartLine": 81,
+              "EndLine": 81,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3HTMLBridge\\VBSL3HTMLBridge\\MainPage.xaml.vb",
+            "Region": {
+              "StartLine": 20,
+              "EndLine": 20,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3HTMLBridge\\VBSL3HTMLBridge\\MainPage.xaml.vb",
+            "Region": {
+              "StartLine": 66,
+              "EndLine": 66,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3IsolatedStorage\\MainPage.xaml.vb",
+            "Region": {
+              "StartLine": 24,
+              "EndLine": 24,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3IsolatedStorage\\MainPage.xaml.vb",
+            "Region": {
+              "StartLine": 424,
+              "EndLine": 424,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3IsolatedStorage\\MainPage.xaml.vb",
+            "Region": {
+              "StartLine": 460,
+              "EndLine": 460,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3IsolatedStorage\\MainPage.xaml.vb",
+            "Region": {
+              "StartLine": 477,
+              "EndLine": 477,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3Navigation\\VBSL3Navigation\\SampleContext.vb",
+            "Region": {
+              "StartLine": 21,
+              "EndLine": 21,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3Navigation\\VBSL3Navigation\\SampleContext.vb",
+            "Region": {
+              "StartLine": 88,
+              "EndLine": 88,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3Navigation\\VBSL3Navigation\\SampleContext.vb",
+            "Region": {
+              "StartLine": 135,
+              "EndLine": 135,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3PixelShader\\MainPage.xaml.vb",
+            "Region": {
+              "StartLine": 29,
+              "EndLine": 29,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3PixelShader\\MainPage.xaml.vb",
+            "Region": {
+              "StartLine": 74,
+              "EndLine": 74,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3SocketClient\\SocketClient.vb",
+            "Region": {
+              "StartLine": 26,
+              "EndLine": 26,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3SocketClient\\SocketClient.vb",
+            "Region": {
+              "StartLine": 48,
+              "EndLine": 48,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3SocketServer\\SocketClient.vb",
+            "Region": {
+              "StartLine": 25,
+              "EndLine": 25,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3SocketServer\\SocketClient.vb",
+            "Region": {
+              "StartLine": 47,
+              "EndLine": 47,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3WriteableBitmap\\FillColor.xaml.vb",
+            "Region": {
+              "StartLine": 19,
+              "EndLine": 19,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBSL3WriteableBitmap\\FillColor.xaml.vb",
+            "Region": {
+              "StartLine": 148,
+              "EndLine": 148,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBUACSelfElevation\\NativeMethods.vb",
+            "Region": {
+              "StartLine": 209,
+              "EndLine": 209,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBUACSelfElevation\\NativeMethods.vb",
+            "Region": {
+              "StartLine": 232,
+              "EndLine": 232,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBVstoVBAInterop\\VstoClass.vb",
+            "Region": {
+              "StartLine": 30,
+              "EndLine": 30,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBVstoVBAInterop\\VstoClass.vb",
+            "Region": {
+              "StartLine": 38,
+              "EndLine": 38,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWin7TriggerStartService\\NativeMethods.vb",
+            "Region": {
+              "StartLine": 254,
+              "EndLine": 254,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWin7TriggerStartService\\NativeMethods.vb",
+            "Region": {
+              "StartLine": 268,
+              "EndLine": 268,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWindowsServiceRecoveryProperty\\Win32.vb",
+            "Region": {
+              "StartLine": 92,
+              "EndLine": 92,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWindowsServiceRecoveryProperty\\Win32.vb",
+            "Region": {
+              "StartLine": 109,
+              "EndLine": 109,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWindowsServiceRecoveryProperty\\Win32.vb",
+            "Region": {
+              "StartLine": 126,
+              "EndLine": 126,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormBindingNestedProperties\\MyCustomTypeDescriptor.vb",
+            "Region": {
+              "StartLine": 21,
+              "EndLine": 21,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormBindingNestedProperties\\MyCustomTypeDescriptor.vb",
+            "Region": {
+              "StartLine": 103,
+              "EndLine": 103,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormBindingNestedProperties\\Person.vb",
+            "Region": {
+              "StartLine": 22,
+              "EndLine": 22,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormBindingNestedProperties\\Person.vb",
+            "Region": {
+              "StartLine": 55,
+              "EndLine": 55,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormControls\\MainForm.vb",
+            "Region": {
+              "StartLine": 37,
+              "EndLine": 37,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormControls\\MainForm.vb",
+            "Region": {
+              "StartLine": 148,
+              "EndLine": 148,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDataBinding\\MainForm.vb",
+            "Region": {
+              "StartLine": 31,
+              "EndLine": 31,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDataBinding\\MainForm.vb",
+            "Region": {
+              "StartLine": 184,
+              "EndLine": 184,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDataGridView\\CustomDataGridViewColumn\\MainForm.vb",
+            "Region": {
+              "StartLine": 25,
+              "EndLine": 25,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDataGridView\\CustomDataGridViewColumn\\MainForm.vb",
+            "Region": {
+              "StartLine": 108,
+              "EndLine": 108,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDataGridView\\JustInTimeDataLoading\\Cache.vb",
+            "Region": {
+              "StartLine": 25,
+              "EndLine": 25,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDataGridView\\JustInTimeDataLoading\\Cache.vb",
+            "Region": {
+              "StartLine": 133,
+              "EndLine": 133,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDataGridView\\JustInTimeDataLoading\\Cache.vb",
+            "Region": {
+              "StartLine": 139,
+              "EndLine": 139,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\Adornment\\UC_AdornmentPainting.vb",
+            "Region": {
+              "StartLine": 25,
+              "EndLine": 25,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\Adornment\\UC_AdornmentPainting.vb",
+            "Region": {
+              "StartLine": 29,
+              "EndLine": 29,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\CustomEditors\\UC_CustomEditor.vb",
+            "Region": {
+              "StartLine": 24,
+              "EndLine": 24,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\CustomEditors\\UC_CustomEditor.vb",
+            "Region": {
+              "StartLine": 39,
+              "EndLine": 39,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\CustomEditors\\UC_CustomEditor.vb",
+            "Region": {
+              "StartLine": 63,
+              "EndLine": 63,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\CustomPropertyTab\\UC_CustomPropertyTab.vb",
+            "Region": {
+              "StartLine": 26,
+              "EndLine": 26,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\CustomPropertyTab\\UC_CustomPropertyTab.vb",
+            "Region": {
+              "StartLine": 48,
+              "EndLine": 48,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\CustomPropertyTab\\UC_CustomPropertyTab.vb",
+            "Region": {
+              "StartLine": 70,
+              "EndLine": 70,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\EnableDesignTimeFuncForChildCtrl\\UC_EnableDesignTimeFuncForChildCtrl.vb",
+            "Region": {
+              "StartLine": 23,
+              "EndLine": 23,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\EnableDesignTimeFuncForChildCtrl\\UC_EnableDesignTimeFuncForChildCtrl.vb",
+            "Region": {
+              "StartLine": 37,
+              "EndLine": 37,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\MouseEvents\\UC_DetectMouseEvent.vb",
+            "Region": {
+              "StartLine": 23,
+              "EndLine": 23,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\MouseEvents\\UC_DetectMouseEvent.vb",
+            "Region": {
+              "StartLine": 28,
+              "EndLine": 28,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\PropertyDisplayOrder\\UC_PropertyDisplayOrder.vb",
+            "Region": {
+              "StartLine": 24,
+              "EndLine": 24,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\PropertyDisplayOrder\\UC_PropertyDisplayOrder.vb",
+            "Region": {
+              "StartLine": 38,
+              "EndLine": 38,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\PropertyDisplayOrder\\UC_PropertyDisplayOrder.vb",
+            "Region": {
+              "StartLine": 72,
+              "EndLine": 72,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\SmartTags\\UC_SmartTagSupport.vb",
+            "Region": {
+              "StartLine": 30,
+              "EndLine": 30,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\SmartTags\\UC_SmartTagSupport.vb",
+            "Region": {
+              "StartLine": 36,
+              "EndLine": 36,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesigner\\SmartTags\\UC_SmartTagSupport.vb",
+            "Region": {
+              "StartLine": 54,
+              "EndLine": 54,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesignerCodeDom\\CodeGenerator.vb",
+            "Region": {
+              "StartLine": 25,
+              "EndLine": 25,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormDesignerCodeDom\\CodeGenerator.vb",
+            "Region": {
+              "StartLine": 50,
+              "EndLine": 50,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormObjPersistence\\MainForm.vb",
+            "Region": {
+              "StartLine": 25,
+              "EndLine": 25,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWinFormObjPersistence\\MainForm.vb",
+            "Region": {
+              "StartLine": 70,
+              "EndLine": 70,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWPFAnimationWhenDataChanged\\DataModel.vb",
+            "Region": {
+              "StartLine": 22,
+              "EndLine": 22,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWPFAnimationWhenDataChanged\\DataModel.vb",
+            "Region": {
+              "StartLine": 33,
+              "EndLine": 33,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWPFAutoCompleteTextBox\\UserControls\\AutoCompleteTextBox.vb",
+            "Region": {
+              "StartLine": 24,
+              "EndLine": 24,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWPFAutoCompleteTextBox\\UserControls\\AutoCompleteTextBox.vb",
+            "Region": {
+              "StartLine": 112,
+              "EndLine": 112,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWPFTwoLevelGrouping\\MainWindow.xaml.vb",
+            "Region": {
+              "StartLine": 22,
+              "EndLine": 22,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBWPFTwoLevelGrouping\\MainWindow.xaml.vb",
+            "Region": {
+              "StartLine": 63,
+              "EndLine": 63,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level module declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBXmlSerialization\\MainModule.vb",
+            "Region": {
+              "StartLine": 32,
+              "EndLine": 32,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBXmlSerialization\\MainModule.vb",
+            "Region": {
+              "StartLine": 97,
+              "EndLine": 97,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2008\\VBXmlSerialization\\MainModule.vb",
+            "Region": {
+              "StartLine": 163,
+              "EndLine": 163,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBASPNETFileUploadStatus\\FileUploadStatus\\FileUploadStatus.vb",
+            "Region": {
+              "StartLine": 35,
+              "EndLine": 35,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBASPNETFileUploadStatus\\FileUploadStatus\\FileUploadStatus.vb",
+            "Region": {
+              "StartLine": 54,
+              "EndLine": 54,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBASPNETHighlightCodeInPage\\CodeManager.vb",
+            "Region": {
+              "StartLine": 32,
+              "EndLine": 32,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBASPNETHighlightCodeInPage\\CodeManager.vb",
+            "Region": {
+              "StartLine": 63,
+              "EndLine": 63,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBASPNETInheritingFromTreeNode\\CustomTreeView.vb",
+            "Region": {
+              "StartLine": 15,
+              "EndLine": 15,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBASPNETInheritingFromTreeNode\\CustomTreeView.vb",
+            "Region": {
+              "StartLine": 25,
+              "EndLine": 25,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBASPNETRemoteUploadAndDownload\\RemoteDownload.vb",
+            "Region": {
+              "StartLine": 34,
+              "EndLine": 34,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBASPNETRemoteUploadAndDownload\\RemoteDownload.vb",
+            "Region": {
+              "StartLine": 76,
+              "EndLine": 76,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBASPNETRemoteUploadAndDownload\\RemoteDownload.vb",
+            "Region": {
+              "StartLine": 110,
+              "EndLine": 110,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBASPNETRemoteUploadAndDownload\\RemoteUpload.vb",
+            "Region": {
+              "StartLine": 31,
+              "EndLine": 31,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBASPNETRemoteUploadAndDownload\\RemoteUpload.vb",
+            "Region": {
+              "StartLine": 100,
+              "EndLine": 100,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBASPNETRemoteUploadAndDownload\\RemoteUpload.vb",
+            "Region": {
+              "StartLine": 129,
+              "EndLine": 129,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBAzureBingMaps\\DAL\\RetryPolicy.vb",
+            "Region": {
+              "StartLine": 24,
+              "EndLine": 24,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBAzureBingMaps\\DAL\\RetryPolicy.vb",
+            "Region": {
+              "StartLine": 57,
+              "EndLine": 57,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBAzureBingMaps\\WebRole1\\WindowsLiveProfile.vb",
+            "Region": {
+              "StartLine": 29,
+              "EndLine": 29,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBAzureBingMaps\\WebRole1\\WindowsLiveProfile.vb",
+            "Region": {
+              "StartLine": 49,
+              "EndLine": 49,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBAzureTableStoragePaging\\MvcWebRole\\Models\\MyModel.vb",
+            "Region": {
+              "StartLine": 20,
+              "EndLine": 20,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBAzureTableStoragePaging\\MvcWebRole\\Models\\MyModel.vb",
+            "Region": {
+              "StartLine": 25,
+              "EndLine": 25,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBAzureTableStoragePaging\\MvcWebRole\\Models\\MyModel.vb",
+            "Region": {
+              "StartLine": 38,
+              "EndLine": 38,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBAzureTableStoragePaging\\MvcWebRole\\Utilities\\TableStoragePagingUtility.vb",
+            "Region": {
+              "StartLine": 22,
+              "EndLine": 22,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBAzureTableStoragePaging\\MvcWebRole\\Utilities\\TableStoragePagingUtility.vb",
+            "Region": {
+              "StartLine": 147,
+              "EndLine": 147,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBAzureTableStoragePaging\\MvcWebRole\\Utilities\\TableStoragePagingUtility.vb",
+            "Region": {
+              "StartLine": 193,
+              "EndLine": 193,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBAzureWorkflow4ServiceBus\\Client\\WorkflowServiceContract.vb",
+            "Region": {
+              "StartLine": 4,
+              "EndLine": 4,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBAzureWorkflow4ServiceBus\\Client\\WorkflowServiceContract.vb",
+            "Region": {
+              "StartLine": 10,
+              "EndLine": 10,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBAzureWorkflow4ServiceBus\\Client\\WorkflowServiceContract.vb",
+            "Region": {
+              "StartLine": 16,
+              "EndLine": 16,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBAzureWorkflow4ServiceBus\\Client\\WorkflowServiceContract.vb",
+            "Region": {
+              "StartLine": 29,
+              "EndLine": 29,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 26,
+              "EndLine": 26,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 67,
+              "EndLine": 67,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 76,
+              "EndLine": 76,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 84,
+              "EndLine": 84,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 89,
+              "EndLine": 89,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 99,
+              "EndLine": 99,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 106,
+              "EndLine": 106,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 118,
+              "EndLine": 118,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 134,
+              "EndLine": 134,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 148,
+              "EndLine": 148,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 157,
+              "EndLine": 157,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 162,
+              "EndLine": 162,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 167,
+              "EndLine": 167,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 174,
+              "EndLine": 174,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\CodeOnlyContainer.vb",
+            "Region": {
+              "StartLine": 184,
+              "EndLine": 184,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\EntityConfigurations.vb",
+            "Region": {
+              "StartLine": 20,
+              "EndLine": 20,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\EntityConfigurations.vb",
+            "Region": {
+              "StartLine": 42,
+              "EndLine": 42,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\EntityConfigurations.vb",
+            "Region": {
+              "StartLine": 64,
+              "EndLine": 64,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\EntityConfigurations.vb",
+            "Region": {
+              "StartLine": 91,
+              "EndLine": 91,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\EntityConfigurations.vb",
+            "Region": {
+              "StartLine": 109,
+              "EndLine": 109,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\EntityConfigurations.vb",
+            "Region": {
+              "StartLine": 130,
+              "EndLine": 130,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\EntityConfigurations.vb",
+            "Region": {
+              "StartLine": 154,
+              "EndLine": 154,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\EntityConfigurations.vb",
+            "Region": {
+              "StartLine": 187,
+              "EndLine": 187,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\EntityConfigurations.vb",
+            "Region": {
+              "StartLine": 216,
+              "EndLine": 216,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\EntityConfigurations.vb",
+            "Region": {
+              "StartLine": 276,
+              "EndLine": 276,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFCodeOnly\\EntityConfigurations.vb",
+            "Region": {
+              "StartLine": 286,
+              "EndLine": 286,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level module declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFComplexType\\MainModule.vb",
+            "Region": {
+              "StartLine": 20,
+              "EndLine": 20,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFComplexType\\MainModule.vb",
+            "Region": {
+              "StartLine": 113,
+              "EndLine": 113,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level module declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFModelFirst\\MainModule.vb",
+            "Region": {
+              "StartLine": 20,
+              "EndLine": 20,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFModelFirst\\MainModule.vb",
+            "Region": {
+              "StartLine": 192,
+              "EndLine": 192,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBEFModelFirst\\MainModule.vb",
+            "Region": {
+              "StartLine": 201,
+              "EndLine": 201,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBSL4DataFormCancelButton\\MainPage.xaml.vb",
+            "Region": {
+              "StartLine": 21,
+              "EndLine": 21,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBSL4DataFormCancelButton\\MainPage.xaml.vb",
+            "Region": {
+              "StartLine": 37,
+              "EndLine": 37,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBSL4DataFormCancelButton\\MainPage.xaml.vb",
+            "Region": {
+              "StartLine": 150,
+              "EndLine": 150,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBSL4DataGridGroupHeaderStyle\\Person.vb",
+            "Region": {
+              "StartLine": 19,
+              "EndLine": 19,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBSL4DataGridGroupHeaderStyle\\Person.vb",
+            "Region": {
+              "StartLine": 58,
+              "EndLine": 58,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBSL4WCFNetTcp\\NetTcpWCFService\\IWeatherService.vb",
+            "Region": {
+              "StartLine": 20,
+              "EndLine": 20,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBSL4WCFNetTcp\\NetTcpWCFService\\IWeatherService.vb",
+            "Region": {
+              "StartLine": 28,
+              "EndLine": 28,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBSL4WCFNetTcp\\NetTcpWCFService\\WeatherService.vb",
+            "Region": {
+              "StartLine": 21,
+              "EndLine": 21,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBSL4WCFNetTcp\\NetTcpWCFService\\WeatherService.vb",
+            "Region": {
+              "StartLine": 65,
+              "EndLine": 65,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBTriggerStartWindowsService\\NativeMethods.vb",
+            "Region": {
+              "StartLine": 26,
+              "EndLine": 26,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBTriggerStartWindowsService\\NativeMethods.vb",
+            "Region": {
+              "StartLine": 153,
+              "EndLine": 153,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBWPFDataGridCustomSort\\DataCenter.vb",
+            "Region": {
+              "StartLine": 22,
+              "EndLine": 22,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\AllInOneCodeFramework\\Visual Studio 2010\\VBWPFDataGridCustomSort\\DataCenter.vb",
+            "Region": {
+              "StartLine": 34,
+              "EndLine": 34,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\DotNetNukeBlog\\Blog\\Components\\MetaWeblog\\ProviderInterfaces.vb",
+            "Region": {
+              "StartLine": 29,
+              "EndLine": 29,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\DotNetNukeBlog\\Blog\\Components\\MetaWeblog\\ProviderInterfaces.vb",
+            "Region": {
+              "StartLine": 117,
+              "EndLine": 117,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\DotNetNukeBlog\\Blog\\Components\\MetaWeblog\\ProviderInterfaces.vb",
+            "Region": {
+              "StartLine": 128,
+              "EndLine": 128,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\DotNetNukeBlog\\Blog\\Components\\Upgrade\\Utils.vb",
+            "Region": {
+              "StartLine": 30,
+              "EndLine": 30,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\DotNetNukeBlog\\Blog\\Components\\Upgrade\\Utils.vb",
+            "Region": {
+              "StartLine": 122,
+              "EndLine": 122,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\DotNetNukeBlog\\Blog\\Components\\Upgrade\\Utils.vb",
+            "Region": {
+              "StartLine": 210,
+              "EndLine": 210,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\DotNetNukeBlog\\Blog\\Trackback.aspx.vb",
+            "Region": {
+              "StartLine": 30,
+              "EndLine": 30,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\DotNetNukeBlog\\Blog\\Trackback.aspx.vb",
+            "Region": {
+              "StartLine": 247,
+              "EndLine": 247,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\CalcEngine\\InternalTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 24,
+              "EndLine": 24,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\CalcEngine\\InternalTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 36,
+              "EndLine": 36,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\CalcEngine\\InternalTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 75,
+              "EndLine": 75,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\CalcEngine\\InternalTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 107,
+              "EndLine": 107,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\CalcEngine\\InternalTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 120,
+              "EndLine": 120,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\CalcEngine\\PublicTypes\\Exceptions.vb",
+            "Region": {
+              "StartLine": 24,
+              "EndLine": 24,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\CalcEngine\\PublicTypes\\Exceptions.vb",
+            "Region": {
+              "StartLine": 54,
+              "EndLine": 54,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\BranchManager.vb",
+            "Region": {
+              "StartLine": 25,
+              "EndLine": 25,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\BranchManager.vb",
+            "Region": {
+              "StartLine": 196,
+              "EndLine": 196,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\BranchManager.vb",
+            "Region": {
+              "StartLine": 260,
+              "EndLine": 260,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 53,
+              "EndLine": 53,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 77,
+              "EndLine": 77,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 100,
+              "EndLine": 100,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 125,
+              "EndLine": 125,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 129,
+              "EndLine": 129,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 145,
+              "EndLine": 145,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 328,
+              "EndLine": 328,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 347,
+              "EndLine": 347,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 373,
+              "EndLine": 373,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\VariableTypes.vb",
+            "Region": {
+              "StartLine": 20,
+              "EndLine": 20,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\VariableTypes.vb",
+            "Region": {
+              "StartLine": 26,
+              "EndLine": 26,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\VariableTypes.vb",
+            "Region": {
+              "StartLine": 30,
+              "EndLine": 30,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\VariableTypes.vb",
+            "Region": {
+              "StartLine": 62,
+              "EndLine": 62,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\InternalTypes\\VariableTypes.vb",
+            "Region": {
+              "StartLine": 94,
+              "EndLine": 94,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\Parsing\\CustomTokenPatterns.vb",
+            "Region": {
+              "StartLine": 4,
+              "EndLine": 4,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\Parsing\\CustomTokenPatterns.vb",
+            "Region": {
+              "StartLine": 14,
+              "EndLine": 14,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\Parsing\\CustomTokenPatterns.vb",
+            "Region": {
+              "StartLine": 28,
+              "EndLine": 28,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\Parsing\\CustomTokenPatterns.vb",
+            "Region": {
+              "StartLine": 37,
+              "EndLine": 37,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\Parsing\\grammatica-1.5.alpha2\\PerCederberg.Grammatica.Runtime\\Automaton.vb",
+            "Region": {
+              "StartLine": 40,
+              "EndLine": 40,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\Parsing\\grammatica-1.5.alpha2\\PerCederberg.Grammatica.Runtime\\Automaton.vb",
+            "Region": {
+              "StartLine": 134,
+              "EndLine": 134,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\Parsing\\grammatica-1.5.alpha2\\PerCederberg.Grammatica.Runtime\\Tokenizer.vb",
+            "Region": {
+              "StartLine": 42,
+              "EndLine": 42,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\Parsing\\grammatica-1.5.alpha2\\PerCederberg.Grammatica.Runtime\\Tokenizer.vb",
+            "Region": {
+              "StartLine": 410,
+              "EndLine": 410,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\Parsing\\grammatica-1.5.alpha2\\PerCederberg.Grammatica.Runtime\\Tokenizer.vb",
+            "Region": {
+              "StartLine": 438,
+              "EndLine": 438,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\Parsing\\grammatica-1.5.alpha2\\PerCederberg.Grammatica.Runtime\\Tokenizer.vb",
+            "Region": {
+              "StartLine": 560,
+              "EndLine": 560,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\PublicTypes\\ImportTypes.vb",
+            "Region": {
+              "StartLine": 23,
+              "EndLine": 23,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\PublicTypes\\ImportTypes.vb",
+            "Region": {
+              "StartLine": 129,
+              "EndLine": 129,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\PublicTypes\\ImportTypes.vb",
+            "Region": {
+              "StartLine": 227,
+              "EndLine": 227,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\PublicTypes\\ImportTypes.vb",
+            "Region": {
+              "StartLine": 282,
+              "EndLine": 282,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\PublicTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 21,
+              "EndLine": 21,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\PublicTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 36,
+              "EndLine": 36,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level interface declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\PublicTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 43,
+              "EndLine": 43,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\PublicTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 50,
+              "EndLine": 50,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\PublicTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 75,
+              "EndLine": 75,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\PublicTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 93,
+              "EndLine": 93,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\PublicTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 122,
+              "EndLine": 122,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\PublicTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 160,
+              "EndLine": 160,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\PublicTypes\\Miscellaneous.vb",
+            "Region": {
+              "StartLine": 198,
+              "EndLine": 198,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\Resources\\ResourceKeys.vb",
+            "Region": {
+              "StartLine": 24,
+              "EndLine": 24,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Lib\\Resources\\ResourceKeys.vb",
+            "Region": {
+              "StartLine": 74,
+              "EndLine": 74,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Tests\\TestTypes.vb",
+            "Region": {
+              "StartLine": 45,
+              "EndLine": 45,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Tests\\TestTypes.vb",
+            "Region": {
+              "StartLine": 89,
+              "EndLine": 89,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Tests\\TestTypes.vb",
+            "Region": {
+              "StartLine": 319,
+              "EndLine": 319,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Tests\\TestTypes.vb",
+            "Region": {
+              "StartLine": 328,
+              "EndLine": 328,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Tests\\TestTypes.vb",
+            "Region": {
+              "StartLine": 457,
+              "EndLine": 457,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Tests\\TestTypes.vb",
+            "Region": {
+              "StartLine": 485,
+              "EndLine": 485,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Tests\\TestTypes.vb",
+            "Region": {
+              "StartLine": 507,
+              "EndLine": 507,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Tests\\TestTypes.vb",
+            "Region": {
+              "StartLine": 535,
+              "EndLine": 535,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\FastLightweightExpressionEvaluator\\Tests\\TestTypes.vb",
+            "Region": {
+              "StartLine": 581,
+              "EndLine": 581,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\ThalesSimulatorLibrary\\ThalesCore\\HostCommands\\BuildIn\\CommandChaining_NK.vb",
+            "Region": {
+              "StartLine": 27,
+              "EndLine": 27,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\ThalesSimulatorLibrary\\ThalesCore\\HostCommands\\BuildIn\\CommandChaining_NK.vb",
+            "Region": {
+              "StartLine": 188,
+              "EndLine": 188,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\ThalesSimulatorLibrary\\ThalesMobileSimulator\\ThalesCoreSource\\HostCommands\\BuildIn\\CommandChaining_NK.vb",
+            "Region": {
+              "StartLine": 27,
+              "EndLine": 27,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    },
+    {
+      "RuleId": "S1996",
+      "FullMessage": "Put this top-level class declaration in a dedicated source file.",
+      "Locations": [
+        {
+          "AnalysisTarget": {
+            "Uri": "\\ThalesSimulatorLibrary\\ThalesMobileSimulator\\ThalesCoreSource\\HostCommands\\BuildIn\\CommandChaining_NK.vb",
+            "Region": {
+              "StartLine": 188,
+              "EndLine": 188,
+              "StartColumn": 0,
+              "EndColumn": 2147483647
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -31,17 +31,17 @@ using SonarLint.Helpers;
 namespace SonarLint.Rules
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
+    [SqaleConstantRemediation("5min")]
     [SqaleSubCharacteristic(SqaleSubCharacteristic.DataChangeability)]
-    [SqaleConstantRemediation("30min")]
     [Rule(DiagnosticId, RuleSeverity, Description, IsActivatedByDefault)]
     [Tags(Tag.BrainOverload)]
-    public class TooManyLabelsInSwitch : DiagnosticAnalyzer
+    public class MagicNumber : DiagnosticAnalyzer
     {
-        internal const string DiagnosticId = "S1479";
-        internal const string Description = "\"switch\" statements should not have too many \"case\" clauses";
-        internal const string MessageFormat = "Reduce the number of switch cases from {1} to at most {0}.";
+        internal const string DiagnosticId = "S109";
+        internal const string Description = "Magic numbers should not be used";
+        internal const string MessageFormat = "Assign this magic number {0} to a well-named constant, and use the constant instead.";
         internal const string Category = Constants.SonarLint;
-        internal const Severity RuleSeverity = Severity.Major;
+        internal const Severity RuleSeverity = Severity.Minor;
         internal const bool IsActivatedByDefault = true;
 
         internal static readonly DiagnosticDescriptor Rule =
@@ -50,28 +50,29 @@ namespace SonarLint.Rules
 
         public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get { return ImmutableArray.Create(Rule); } }
 
-        [RuleParameter("maximum", PropertyType.Integer, "Maximum number of case", "30")]
-        public int Maximum { get; set; }
+        private const string DefaultValueExpressions = "0,1,0x0,0x00,.0,.1,0.0,1.0";
+
+        [RuleParameter("exceptions", PropertyType.String, "Comma separated list of allowed values (excluding '-' and '+' signs)", DefaultValueExpressions)]
+        public IImmutableSet<string> Exceptions { get; set; } = DefaultValueExpressions.Split(',').ToImmutableHashSet();
 
         public override void Initialize(AnalysisContext context)
         {
             context.RegisterSyntaxNodeActionInNonGenerated(
                 c =>
                 {
-                    var switchNode = (SwitchStatementSyntax)c.Node;
-                    var labels = NumberOfLabels(switchNode);
+                    var literalNode = (LiteralExpressionSyntax)c.Node;
 
-                    if (labels > Maximum)
+                    if (!literalNode.IsPartOfStructuredTrivia() &&
+                        !literalNode.Ancestors().Any(e =>
+                          e.IsKind(SyntaxKind.VariableDeclarator) ||
+                          e.IsKind(SyntaxKind.EnumDeclaration) ||
+                          e.IsKind(SyntaxKind.Attribute)) &&
+                        !Exceptions.Contains(literalNode.Token.Text))
                     {
-                        c.ReportDiagnostic(Diagnostic.Create(Rule, switchNode.GetLocation(), Maximum, labels));
+                        c.ReportDiagnostic(Diagnostic.Create(Rule, literalNode.GetLocation(), literalNode.Token.Text));
                     }
                 },
-                SyntaxKind.SwitchStatement);
-        }
-
-        private static int NumberOfLabels(SwitchStatementSyntax node)
-        {
-            return node.Sections.Sum(e => e.Labels.Count);
+                SyntaxKind.NumericLiteralExpression);
         }
     }
 }

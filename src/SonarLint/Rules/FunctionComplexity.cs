@@ -26,6 +26,8 @@ using SonarLint.Common;
 using SonarLint.Common.CSharp;
 using SonarLint.Common.Sqale;
 using SonarLint.Helpers;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using System;
 
 namespace SonarLint.Rules
 {
@@ -49,8 +51,11 @@ namespace SonarLint.Rules
 
         public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get { return ImmutableArray.Create(Rule); } }
 
-        [RuleParameter("maximumFunctionComplexityThreshold", PropertyType.Integer, "The maximum authorized complexity in function", "10")]
-        public int Maximum { get; set; }
+        private const int DefaultValueMaximum = 10;
+
+        [RuleParameter("maximumFunctionComplexityThreshold", PropertyType.Integer,
+            "The maximum authorized complexity in function", DefaultValueMaximum)]
+        public int Maximum { get; set; } = DefaultValueMaximum;
 
         public override void Initialize(AnalysisContext context)
         {
@@ -72,5 +77,43 @@ namespace SonarLint.Rules
                 SyntaxKind.AddAccessorDeclaration,
                 SyntaxKind.RemoveAccessorDeclaration);
         }
+
+        //Todo
+        //public override void Initialize(AnalysisContext context)
+        //{
+        //    context.RegisterSyntaxNodeActionInNonGenerated(
+        //        c => CheckComplexity<MethodDeclarationSyntax>(c, m => m.Identifier.GetLocation()),
+        //        SyntaxKind.MethodDeclaration);
+
+        //    context.RegisterSyntaxNodeActionInNonGenerated(
+        //        c => CheckComplexity<OperatorDeclarationSyntax>(c, o => o.OperatorKeyword.GetLocation()),
+        //        SyntaxKind.OperatorDeclaration);
+
+        //    context.RegisterSyntaxNodeActionInNonGenerated(
+        //        c => CheckComplexity<ConstructorDeclarationSyntax>(c, co => co.Identifier.GetLocation()),
+        //        SyntaxKind.ConstructorDeclaration);
+
+        //    context.RegisterSyntaxNodeActionInNonGenerated(
+        //        c => CheckComplexity<DestructorDeclarationSyntax>(c, d => d.Identifier.GetLocation()),
+        //        SyntaxKind.DestructorDeclaration);
+
+        //    context.RegisterSyntaxNodeActionInNonGenerated(
+        //        c => CheckComplexity<AccessorDeclarationSyntax>(c, a => a.Keyword.GetLocation()),
+        //        SyntaxKind.GetAccessorDeclaration,
+        //        SyntaxKind.SetAccessorDeclaration,
+        //        SyntaxKind.AddAccessorDeclaration,
+        //        SyntaxKind.RemoveAccessorDeclaration);
+        //}
+
+        //private void CheckComplexity<TSyntax>(SyntaxNodeAnalysisContext c, Func<TSyntax, Location> location)
+        //    where TSyntax : SyntaxNode
+        //{
+        //    var complexity = new Metrics(c.Node.SyntaxTree).GetComplexity(c.Node);
+        //    if (complexity > Maximum)
+        //    {
+        //        var syntax = (TSyntax)c.Node;
+        //        c.ReportDiagnostic(Diagnostic.Create(Rule, location(syntax), Maximum, complexity));
+        //    }
+        //}
     }
 }

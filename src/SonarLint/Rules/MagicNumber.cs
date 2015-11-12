@@ -27,6 +27,7 @@ using Microsoft.CodeAnalysis.Diagnostics;
 using SonarLint.Common;
 using SonarLint.Common.Sqale;
 using SonarLint.Helpers;
+using System.Collections.Generic;
 
 namespace SonarLint.Rules
 {
@@ -53,7 +54,7 @@ namespace SonarLint.Rules
         private const string DefaultValueExpressions = "0,1,0x0,0x00,.0,.1,0.0,1.0";
 
         [RuleParameter("exceptions", PropertyType.String, "Comma separated list of allowed values (excluding '-' and '+' signs)", DefaultValueExpressions)]
-        public IImmutableSet<string> Exceptions { get; set; } = DefaultValueExpressions.Split(',').ToImmutableHashSet();
+        public IEnumerable<string> Exceptions { get; set; } = DefaultValueExpressions.Split(',');
 
         public override void Initialize(AnalysisContext context)
         {

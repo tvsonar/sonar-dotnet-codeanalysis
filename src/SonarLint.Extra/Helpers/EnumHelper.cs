@@ -25,8 +25,6 @@ namespace SonarLint.Helpers
 {
     public static class EnumHelper
     {
-        //TODO the assembly could be SonarQube.MetaData;
-
         public static string ToSonarQubeString(this PropertyType propertyType)
         {
             var parts = propertyType.ToString().SplitCamelCase();

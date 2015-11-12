@@ -30,7 +30,6 @@ namespace SonarLint.Common
         public string Description { get; private set; }
         public PropertyType Type { get; private set; }
         public string DefaultValue { get; private set; }
-        public Func<string, string> ValueLoader { get; private set; }
 
         public RuleParameterAttribute(string key, PropertyType type, string description, string defaultValue)
         {

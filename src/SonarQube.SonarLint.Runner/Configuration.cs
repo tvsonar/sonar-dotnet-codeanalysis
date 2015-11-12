@@ -32,26 +32,26 @@ using System.Reflection;
 
 namespace SonarLint.Runner
 {
-    public class RuleParameterValue
-    {
-        public string ParameterKey { get; set; }
-        public string ParameterValue { get; set; }
-    }
-    public class RuleParameterValues
-    {
-        public string RuleId { get; set; }
-        public List<RuleParameterValue> ParameterValues { get; set; } = new List<RuleParameterValue>();
-    }
-
     public class Configuration
     {
+        private class RuleParameterValue
+        {
+            public string ParameterKey { get; set; }
+            public string ParameterValue { get; set; }
+        }
+        private class RuleParameterValues
+        {
+            public string RuleId { get; set; }
+            public List<RuleParameterValue> ParameterValues { get; set; } = new List<RuleParameterValue>();
+        }
+
         private readonly ImmutableArray<DiagnosticAnalyzer> nonTemplateAnalyzers;
+        private readonly IImmutableList<RuleParameterValues> parameters;
         private readonly AnalyzerLanguage language;
 
         public bool IgnoreHeaderComments { get; }
         public IImmutableList<string> Files { get; }
         public IImmutableSet<string> AnalyzerIds { get; }
-        public IImmutableList<RuleParameterValues> Parameters {  get; }
 
         public Configuration(XContainer xml, AnalyzerLanguage language)
         {
@@ -70,24 +70,24 @@ namespace SonarLint.Runner
             {
                 var analyzerId = rule.Elements("Key").Single().Value;
 
-                var parameters = rule
-                                 .Elements("Parameters").Single()
-                                 .Elements("Parameter")
-                                 .Select(e => new RuleParameterValue
-                                 {
-                                     ParameterKey = e.Elements("Key").Single().Value,
-                                     ParameterValue = e.Elements("Value").Single().Value
-                                 });
+                var parameterValues = rule
+                    .Elements("Parameters").Single()
+                    .Elements("Parameter")
+                    .Select(e => new RuleParameterValue
+                    {
+                        ParameterKey = e.Elements("Key").Single().Value,
+                        ParameterValue = e.Elements("Value").Single().Value
+                    });
 
                 var pvs = new RuleParameterValues
                 {
                     RuleId = analyzerId
                 };
-                pvs.ParameterValues.AddRange(parameters);
+                pvs.ParameterValues.AddRange(parameterValues);
 
                 builder.Add(pvs);
             }
-            Parameters = builder.ToImmutable();
+            parameters = builder.ToImmutable();
         }
 
         private static ImmutableDictionary<string, string> ParseSettings(XContainer xml)
@@ -114,23 +114,23 @@ namespace SonarLint.Runner
 
         private void SetParameterValues(DiagnosticAnalyzer parameteredAnalyzer)
         {
-            var parameters = parameteredAnalyzer.GetType()
+            var propertyParameterPairs = parameteredAnalyzer.GetType()
                 .GetProperties()
                 .Select(p => new { Property = p, Descriptor = p.GetCustomAttributes<RuleParameterAttribute>().SingleOrDefault() })
                 .Where(p=> p.Descriptor != null);
 
-            foreach (var parameter in parameters)
+            foreach (var propertyParameterPair in propertyParameterPairs)
             {
-                var value = Parameters
+                var value = parameters
                     .Single(p => p.RuleId == parameteredAnalyzer.SupportedDiagnostics.Single().Id).ParameterValues
-                    .Single(pv => pv.ParameterKey == parameter.Descriptor.Key)
+                    .Single(pv => pv.ParameterKey == propertyParameterPair.Descriptor.Key)
                     .ParameterValue;
 
                 object convertedValue = value;
-                switch (parameter.Descriptor.Type)
+                switch (propertyParameterPair.Descriptor.Type)
                 {
                     case PropertyType.String:
-                        if (typeof(IEnumerable<string>).IsAssignableFrom(parameter.Property.PropertyType))
+                        if (typeof(IEnumerable<string>).IsAssignableFrom(propertyParameterPair.Property.PropertyType))
                         {
                             //todo: is this a common thing, or it's special for MagicNumbers.
                             //If so, then it would be better to put this parsing logic directly into each class.
@@ -144,7 +144,7 @@ namespace SonarLint.Runner
                         throw new NotImplementedException();
                 }
 
-                parameter.Property.SetValue(parameteredAnalyzer, convertedValue);
+                propertyParameterPair.Property.SetValue(parameteredAnalyzer, convertedValue);
             }
         }
 
@@ -179,7 +179,7 @@ namespace SonarLint.Runner
                 return;
             }
             var rules = ImmutableArray.CreateBuilder<CommentRegularExpressionRule>();
-            foreach (var parameterValues in Parameters.Where(p => p.RuleId == CommentRegularExpression.DiagnosticId).Select(p=>p.ParameterValues))
+            foreach (var parameterValues in parameters.Where(p => p.RuleId == CommentRegularExpression.DiagnosticId).Select(p=>p.ParameterValues))
             {
                 rules.Add(
                     new CommentRegularExpressionRule

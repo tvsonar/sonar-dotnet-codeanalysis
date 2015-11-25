@@ -1,0 +1,54 @@
+<p>
+    Using parallel collections or arrays rather than classes to hold and process related pieces of data is an
+    antipattern. Instead, define a type for the entity the arrays represent and use an array or collection of
+    that type.
+</p>
+<p>
+    This rule raises an issue when the index from one array or collection is used to access an element from
+    another array or collection. There is no issue raised if the collection element is being written.
+</p>
+
+<h2>Noncompliant Code Example</h2>
+<pre>
+class Leg
+{
+  public int Length { get; set; }
+}
+
+var rightLegs = //...
+var leftLegs = //...
+
+for(var i = 0; i&lt;rightLegs.Count; i++)
+{
+  var rightLeg = rightLegs[i];  //Noncompliant
+  var leftLeg = leftLegs[i];    //Noncompliant
+  if (leftLeg.Length != rightLeg.Length)
+  {
+    //... unlucky
+  }
+}
+</pre>
+
+<h2>Compliant Solution</h2>
+<pre>
+class Leg
+{
+  public int Length { get; set; }
+}
+
+class Biped
+{
+  public Leg LeftLeg { get; set; }
+  public Leg RightLeg { get; set; }
+}
+
+var creatures = //...
+for(var i = 0; i&lt;creatures.Count; i++)
+{
+  var creature = creatures[i];
+  if (creature.LeftLeg.Length != creature.RightLeg.Length)
+  {
+    //... unlucky
+  }
+}
+</pre>

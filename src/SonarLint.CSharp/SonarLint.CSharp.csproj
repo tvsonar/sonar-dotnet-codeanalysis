@@ -192,6 +192,7 @@
     <Compile Include="Rules\OrderByRepeatedCodeFixProvider.cs" />
     <Compile Include="Rules\ParameterAssignedTo.cs" />
     <Compile Include="Rules\ParameterNamesInPartialMethod.cs" />
+    <Compile Include="Rules\ParallelCollections.cs" />
     <Compile Include="Rules\ParametersCorrectOrder.cs" />
     <Compile Include="Rules\PropertyGetterWithThrow.cs" />
     <Compile Include="Rules\PropertyToAutoProperty.cs" />

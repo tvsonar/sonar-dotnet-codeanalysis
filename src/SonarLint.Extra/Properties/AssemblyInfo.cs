@@ -19,7 +19,12 @@
  */
 
 using System.Reflection;
+using System.Runtime.CompilerServices;
 
 [assembly: AssemblyTitle("SonarLint.Extra")]
 [assembly: AssemblyProduct("SonarLint.Extra")]
 [assembly: AssemblyDescription("")]
+
+[assembly: AssemblyKeyFileAttribute("..\\SonarSourcePublic.snk")]
+
+[assembly: InternalsVisibleTo("SonarLint.UnitTest, PublicKey = " + Signing.PublicKey)]

@@ -48,7 +48,6 @@ namespace SonarLint.Runner
         }
 
         private readonly ImmutableArray<DiagnosticAnalyzer> analyzers;
-        private readonly IImmutableList<RuleParameterValues> parameters;
         private readonly AnalyzerLanguage language;
         private readonly XDocument xml;
 
@@ -80,8 +79,6 @@ namespace SonarLint.Runner
             AnalyzerIds = xml.Descendants("Rule").Select(e => e.Elements("Key").Single().Value).ToImmutableHashSet();
         }
 
-
-
         private static ImmutableDictionary<string, string> ParseSettings(XContainer xml)
         {
             return xml
@@ -103,8 +100,6 @@ namespace SonarLint.Runner
                 .Where(e => e != null)
                 .ToImmutableDictionary(e => e.Key, e => e.Value);
         }
-
-
 
         public ImmutableArray<DiagnosticAnalyzer> GetAnalyzers()
         {

@@ -68,8 +68,8 @@ namespace SonarLint.DocGenerator
         }
 
 
-        public const string CrosslinkPattern = "(Rule )(S[0-9]+)";
-        public const string HelpLinkPattern = "#version={0}&ruleId={1}";
+        internal const string CrosslinkPattern = "(Rule )(S[0-9]+)";
+        internal const string HelpLinkPattern = "#version={0}&ruleId={1}";
         private static string AddLinksBetweenRulesToDescription(string description, string productVersion)
         {
             var urlRegexPattern = string.Format(HelpLinkPattern, productVersion, @"$2");

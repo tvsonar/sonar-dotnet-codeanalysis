@@ -21,27 +21,27 @@ namespace SonarLint.Common
 {
     public static class Tag
     {
-        public const string BadPractice = "bad-practice";
-        public const string BrainOverload = "brain-overload";
-        public const string Bug = "bug";
-        public const string Cert = "cert";
-        public const string Clumsy = "clumsy";
-        public const string Confusing = "confusing";
-        public const string Convention = "convention";
-        public const string Cwe = "cwe";
-        public const string DenialOfService = "denial-of-service";
-        public const string Design = "design";
-        public const string ErrorHandling = "error-handling";
-        public const string Misra = "misra";
-        public const string MultiThreading = "multi-threading";
-        public const string OwaspA6 = "owasp-a6";
-        public const string Performance = "performance";
-        public const string Pitfall = "pitfall";
-        public const string SansTop25Porous = "sans-top25-porous";
-        public const string Security = "security";
-        public const string Suspicious = "suspicious";
-        public const string Sql = "sql";
-        public const string Unpredictable = "unpredictable";
-        public const string Unused = "unused";
+        internal const string BadPractice = "bad-practice";
+        internal const string BrainOverload = "brain-overload";
+        internal const string Bug = "bug";
+        internal const string Cert = "cert";
+        internal const string Clumsy = "clumsy";
+        internal const string Confusing = "confusing";
+        internal const string Convention = "convention";
+        internal const string Cwe = "cwe";
+        internal const string DenialOfService = "denial-of-service";
+        internal const string Design = "design";
+        internal const string ErrorHandling = "error-handling";
+        internal const string Misra = "misra";
+        internal const string MultiThreading = "multi-threading";
+        internal const string OwaspA6 = "owasp-a6";
+        internal const string Performance = "performance";
+        internal const string Pitfall = "pitfall";
+        internal const string SansTop25Porous = "sans-top25-porous";
+        internal const string Security = "security";
+        internal const string Suspicious = "suspicious";
+        internal const string Sql = "sql";
+        internal const string Unpredictable = "unpredictable";
+        internal const string Unused = "unused";
     }
 }

@@ -23,3 +23,5 @@ using System.Reflection;
 [assembly: AssemblyTitle("SonarLint.UnitTest")]
 [assembly: AssemblyProduct("SonarLint.UnitTest")]
 [assembly: AssemblyDescription("")]
+
+[assembly: AssemblyKeyFileAttribute("..\\..\\SonarSourcePublic.snk")]

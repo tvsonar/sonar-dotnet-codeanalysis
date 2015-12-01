@@ -35,8 +35,8 @@ namespace SonarLint.Rules.CSharp
     [ExportCodeFixProvider(LanguageNames.CSharp)]
     public class GenericReadonlyFieldPropertyAssignmentCodeFixProvider : CodeFixProvider
     {
-        public const string TitleRemove = "Remove assignment";
-        public const string TitleAddClassConstraint = "Add reference type constraint";
+        internal const string TitleRemove = "Remove assignment";
+        internal const string TitleAddClassConstraint = "Add reference type constraint";
         public sealed override ImmutableArray<string> FixableDiagnosticIds
         {
             get

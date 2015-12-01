@@ -22,12 +22,12 @@ namespace SonarLint.Common
 {
     public static class Category
     {
-        public const string Design = nameof(Design);
-        public const string Maintainability = nameof(Maintainability);
-        public const string Naming = nameof(Naming);
-        public const string Performance = nameof(Performance);
-        public const string Portability = nameof(Portability);
-        public const string Reliability = nameof(Reliability);
-        public const string Security = nameof(Security);
+        internal const string Design = nameof(Design);
+        internal const string Maintainability = nameof(Maintainability);
+        internal const string Naming = nameof(Naming);
+        internal const string Performance = nameof(Performance);
+        internal const string Portability = nameof(Portability);
+        internal const string Reliability = nameof(Reliability);
+        internal const string Security = nameof(Security);
     }
 }

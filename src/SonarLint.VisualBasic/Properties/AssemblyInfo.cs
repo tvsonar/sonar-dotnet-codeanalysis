@@ -19,7 +19,14 @@
  */
 
 using System.Reflection;
+using System.Runtime.CompilerServices;
 
 [assembly: AssemblyTitle("SonarLint.VisualBasic")]
 [assembly: AssemblyProduct("SonarLint.VisualBasic")]
 [assembly: AssemblyDescription("")]
+
+[assembly: AssemblyKeyFileAttribute("..\\SonarSourcePublic.snk")]
+
+#pragma warning disable CS0436 // Type conflicts with imported type
+[assembly: InternalsVisibleTo("SonarLint.UnitTest, PublicKey = " + Signing.PublicKey)]
+#pragma warning restore CS0436 // Type conflicts with imported type

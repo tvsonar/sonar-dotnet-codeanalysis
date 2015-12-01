@@ -24,3 +24,4 @@ using System.Reflection;
 [assembly: AssemblyProduct("SonarLint.Runner")]
 [assembly: AssemblyDescription("")]
 
+[assembly: AssemblyKeyFileAttribute("..\\SonarSourcePublic.snk")]

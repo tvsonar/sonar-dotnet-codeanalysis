@@ -23,3 +23,5 @@ using System.Reflection;
 [assembly: AssemblyTitle("SonarLint.RulingTest")]
 [assembly: AssemblyProduct("SonarLint.RulingTest")]
 [assembly: AssemblyDescription("")]
+
+[assembly: AssemblyKeyFileAttribute("..\\..\\SonarSourcePublic.snk")]

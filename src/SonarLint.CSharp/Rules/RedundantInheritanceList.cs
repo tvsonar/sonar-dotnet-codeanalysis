@@ -30,6 +30,7 @@ using Microsoft.CodeAnalysis.Text;
 using System.Linq;
 using System.Collections.Generic;
 using System;
+using System.Globalization;
 
 namespace SonarLint.Rules.CSharp
 {
@@ -179,7 +180,7 @@ namespace SonarLint.Rules.CSharp
                     {
                         var location = GetLocationWithToken(baseType.Type, baseList.Types);
                         c.ReportDiagnostic(Diagnostic.Create(Rule, location,
-                            ImmutableDictionary<string, string>.Empty.Add(RedundantIndexKey, i.ToString()),
+                            ImmutableDictionary<string, string>.Empty.Add(RedundantIndexKey, i.ToString(CultureInfo.InvariantCulture)),
                             string.Format(MessageAlreadyImplements, interfaceTypeWithAllInterfaces.Key.Name, interfaceType.Name)));
                         break;
                     }

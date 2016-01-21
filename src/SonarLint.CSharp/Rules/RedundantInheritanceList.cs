@@ -141,7 +141,7 @@ namespace SonarLint.Rules.CSharp
 
         private static void CheckIfInterfaceIsRedundantForInterface(SyntaxNodeAnalysisContext c, InterfaceDeclarationSyntax interfaceDeclaration)
         {
-            CheckIfInterfaceIsRedundant(c, interfaceDeclaration.BaseList, (interfaceType) => false);
+            CheckIfInterfaceIsRedundant(c, interfaceDeclaration.BaseList, interfaceType => false);
         }
 
         private static void CheckIfInterfaceIsRedundantForClass(SyntaxNodeAnalysisContext c, ClassDeclarationSyntax classDeclaration)
@@ -153,7 +153,7 @@ namespace SonarLint.Rules.CSharp
             }
 
             CheckIfInterfaceIsRedundant(c, classDeclaration.BaseList,
-                (interfaceType) => HasInterfaceMember(classSymbol, interfaceType));
+                interfaceType => HasInterfaceMember(classSymbol, interfaceType));
         }
 
         private static void CheckIfInterfaceIsRedundant(SyntaxNodeAnalysisContext c, BaseListSyntax baseList,

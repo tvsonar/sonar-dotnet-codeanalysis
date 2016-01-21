@@ -98,7 +98,7 @@ namespace SonarLint.Rules.CSharp
                 return;
             }
 
-            var methodName = $"{methodSymbol.ContainingType.ToString()}.{methodSymbol.Name}";
+            var methodName = $"{methodSymbol.ContainingType}.{methodSymbol.Name}";
             if (MethodNamesToReachEncryptionAlgorithm.Contains(methodName) ||
                 IsBaseEncryptionCreateCalled(methodName, invocation.ArgumentList))
             {

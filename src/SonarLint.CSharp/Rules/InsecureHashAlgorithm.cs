@@ -95,7 +95,7 @@ namespace SonarLint.Rules.CSharp
                 return;
             }
 
-            var methodName = $"{methodSymbol.ContainingType.ToString()}.{methodSymbol.Name}";
+            var methodName = $"{methodSymbol.ContainingType}.{methodSymbol.Name}";
             string algorithmName;
             if (MethodNamesToReachHashAlgorithm.Contains(methodName) &&
                 TryGetAlgorithmName(invocation.ArgumentList, out algorithmName))

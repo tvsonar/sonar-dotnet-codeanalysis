@@ -12,18 +12,50 @@ function NormalizeAndSplitSarifReport
   $jsonserial.MaxJsonLength = 100000000
   $json = $jsonserial.DeserializeObject($contents)
 
+  $version = ''
+  $issuesContainer = $json
+
+  If ($json.runLogs -and $json.runLogs.length -eq 1 -and $json.runLogs[0].toolInfo.fileVersion -eq '1.2.0.60116') {
+    $version = '1.2.0'
+    $issuesContainer = $json.runLogs[0]    
+  }
+  If ($json.toolInfo -and $json.toolInfo.fileVersion -eq '1.1.0') {
+    $version = '1.1.0'
+  }
+
+  If ($version -eq '') {
+    Return
+  }
+
   # Is there any issue?
-  If ($json.issues) {
-    # The first argument of -replace is a regex (which needs to be backslash escaped), the 2nd one is a string (no backslash escaping)
-    $pathPrefix = (($pwd.Path + '\') -replace '\\', '\\')
-
+  If ($issuesContainer.issues) {
+    
     # Remove the common absolute path prefix
-    $json.issues.locations.analysisTarget | Foreach-Object { $_.uri = $_.uri -replace $pathPrefix, '' }
-
+    If ($version -eq '1.2.0') {
+	  # The first argument of -replace is a regex (which needs to be backslash escaped), the 2nd one is a string (no backslash escaping)
+      $pathPrefix = (('file:///' + $pwd.Path + '/') -replace '\\', '/')
+      $issuesContainer.issues.locations.analysisTarget | Foreach-Object { $_.uri = ($_.uri -replace $pathPrefix, '') -replace '/', '\' }
+	  
+      $issuesContainer.issues.locations.analysisTarget.region | Foreach-Object { 
+        $_.startLine = $_.startLine - 1 
+        $_.startColumn = $_.startColumn - 1 
+        $_.endLine = $_.endLine - 1 
+        $_.endColumn = $_.endColumn - 1 
+      }
+    }
+    If ($version -eq '1.1.0') {
+	  # The first argument of -replace is a regex (which needs to be backslash escaped), the 2nd one is a string (no backslash escaping)
+	  $pathPrefix = (($pwd.Path + '\') -replace '\\', '\\')
+	  
+      # optional todo: minimize paths: aaa\\bbb\\..\\ccc should become aaa\\ccc
+	  
+      $issuesContainer.issues.locations.analysisTarget | Foreach-Object { $_.uri = $_.uri -replace $pathPrefix, '' }
+    }
+    
     # Filter, Sort & Group issues to get a stable SARIF report
     # AD0001's stack traces in the message are unsable
     # CS???? messages are not of interest
-    $issuesByRule = $json.issues |
+    $issuesByRule = $issuesContainer.issues |
       Where-Object { $_.ruleId -match '^S[0-9]+$' } |                             # Keep SonarLint rules only
       Sort-Object @{Expression={$_.locations.analysisTarget.uri}},                # Regroup same file issues
                   @{Expression={$_.locations.analysisTarget.region.startLine}},   # Sort by source position
@@ -36,8 +68,26 @@ function NormalizeAndSplitSarifReport
     # Split the SARIF report into 1 per rule and remove leading spaces
     $file = [System.IO.FileInfo]$sarifReportPath
     $project = ([System.IO.FileInfo]$file.DirectoryName).Name
+    
+    $toolInfo = $issuesContainer.toolInfo
+
+    If ($version -eq '1.2.0' ) {
+      $removeStatus = $toolInfo.Remove('name')
+      $removeStatus = $toolInfo.Remove('version')
+      $removeStatus = $toolInfo.Remove('fileVersion')
+    
+      $toolInfo.fileVersion = '1.1.0'    
+      $toolInfo.productVersion = '1.1.0'
+      $toolInfo.toolName = 'Microsoft (R) Visual C# Compiler'
+
+      $removeStatus = $json.Remove('runLogs')
+    }
+
+    # optional todo: change additional properties
+
     $issuesByRule |
-      Foreach-Object {
+      Foreach-Object { 
+        $json.toolInfo = $toolInfo
         $json.issues = $_.Group
         $path = Join-Path (Join-Path 'actual' $project) ($file.BaseName + '-' + $_.Name + $file.Extension)
         $lines = ((ConvertTo-Json $json -Depth 42) -split "`r`n") |  # Convert JSON to String and split lines

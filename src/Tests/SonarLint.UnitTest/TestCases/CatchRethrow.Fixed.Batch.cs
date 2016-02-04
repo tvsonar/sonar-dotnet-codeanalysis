@@ -44,6 +44,16 @@ namespace Tests.TestCases
             {
 
             }
+
+            try
+            {
+                doSomething();
+            }
+            catch (ArgumentException)
+            {
+                //some comment to make it compliant
+                throw;
+            }
         }
     }
 }

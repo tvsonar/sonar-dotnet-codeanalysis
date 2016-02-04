@@ -26,6 +26,7 @@ using Microsoft.CodeAnalysis.Diagnostics;
 using SonarLint.Common;
 using SonarLint.Common.Sqale;
 using SonarLint.Helpers;
+using System.Linq;
 
 namespace SonarLint.Rules.CSharp
 {
@@ -70,15 +71,22 @@ namespace SonarLint.Rules.CSharp
 
                     var lastCatchClause = tryStatement.Catches.LastOrDefault();
 
-                    if (lastCatchClause!=null &&
-                        EquivalenceChecker.AreEquivalent(lastCatchClause.Block, ThrowBlock))
+                    if (lastCatchClause != null &&
+                        EquivalenceChecker.AreEquivalent(lastCatchClause.Block, ThrowBlock) &&
+                        !HasComment(lastCatchClause.Block))
                     {
                         c.ReportDiagnostic(Diagnostic.Create(
-                                Rule,
-                                lastCatchClause.GetLocation()));
+                            Rule,
+                            lastCatchClause.GetLocation()));
                     }
                 },
                 SyntaxKind.TryStatement);
+        }
+
+        private static bool HasComment(BlockSyntax block)
+        {
+            return block.Statements.SelectMany(st => st.DescendantTrivia())
+                .Any(trivia => trivia.IsKind(SyntaxKind.SingleLineCommentTrivia) || trivia.IsKind(SyntaxKind.MultiLineCommentTrivia));
         }
     }
 }

@@ -61,7 +61,7 @@ namespace SonarLint.Rules.CSharp
         [RuleParameter("max", PropertyType.Integer, "Maximum authorized number of parameters", DefaultValueMaximum)]
         public int Maximum { get; set; } = DefaultValueMaximum;
 
-        public override void Initialize(WrappingAnalysisContext context)
+        public override void Initialize(ParameterLoaderAnalysisContext context)
         {
             context.RegisterSyntaxNodeActionInNonGenerated(
                 c =>

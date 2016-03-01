@@ -37,7 +37,7 @@ namespace SonarLint.Helpers
         }
 
         public static void RegisterSyntaxNodeActionInNonGenerated<TLanguageKindEnum>(
-            this WrappingAnalysisContext context,
+            this ParameterLoaderAnalysisContext context,
             Action<SyntaxNodeAnalysisContext> action,
             params TLanguageKindEnum[] syntaxKinds) where TLanguageKindEnum : struct
         {
@@ -60,7 +60,7 @@ namespace SonarLint.Helpers
         }
 
         public static void RegisterSyntaxTreeActionInNonGenerated(
-            this WrappingAnalysisContext context,
+            this ParameterLoaderAnalysisContext context,
             Action<SyntaxTreeAnalysisContext> action)
         {
             context.RegisterSyntaxTreeActionInNonGenerated(CSharp.GeneratedCodeRecognizer.Instance, action);
@@ -74,7 +74,7 @@ namespace SonarLint.Helpers
         }
 
         public static void RegisterCodeBlockStartActionInNonGenerated<TLanguageKindEnum>(
-            this WrappingAnalysisContext context,
+            this ParameterLoaderAnalysisContext context,
             Action<CodeBlockStartAnalysisContext<TLanguageKindEnum>> action) where TLanguageKindEnum : struct
         {
             context.RegisterCodeBlockStartActionInNonGenerated(CSharp.GeneratedCodeRecognizer.Instance, action);

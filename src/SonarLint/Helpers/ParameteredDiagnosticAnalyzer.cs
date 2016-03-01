@@ -26,7 +26,7 @@ namespace SonarLint.Helpers
     {
         public sealed override void Initialize(AnalysisContext context)
         {
-            var analysisContext = new WrappingAnalysisContext(context);
+            var analysisContext = new ParameterLoaderAnalysisContext(context);
             Initialize(analysisContext);
 
             context.RegisterCompilationStartAction(
@@ -37,6 +37,6 @@ namespace SonarLint.Helpers
                 });
         }
 
-        public abstract void Initialize(WrappingAnalysisContext context);
+        public abstract void Initialize(ParameterLoaderAnalysisContext context);
     }
 }

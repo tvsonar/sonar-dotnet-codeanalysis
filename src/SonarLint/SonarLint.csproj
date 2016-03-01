@@ -96,7 +96,7 @@
     <Compile Include="Helpers\KnownType.cs" />
     <Compile Include="Helpers\TypeHelper.cs" />
     <Compile Include="Helpers\SymbolHelper.cs" />
-    <Compile Include="Helpers\AnalysisContext.cs" />
+    <Compile Include="Helpers\ParameterLoaderAnalysisContext.cs" />
     <Compile Include="Helpers\ParameteredDiagnosticAnalyzer.cs" />
     <Compile Include="Helpers\IMultiLanguageDiagnosticAnalyzer.cs" />
     <Compile Include="Helpers\ParameterLoader.cs" />

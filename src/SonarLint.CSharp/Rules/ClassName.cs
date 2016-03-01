@@ -60,7 +60,7 @@ namespace SonarLint.Rules.CSharp
         [RuleParameter("format", PropertyType.String, "Regular expression used to check the class names against.", DefaultValueConvention)]
         public string Convention { get; set; } = DefaultValueConvention;
 
-        public override void Initialize(WrappingAnalysisContext context)
+        public override void Initialize(ParameterLoaderAnalysisContext context)
         {
             context.RegisterSyntaxNodeActionInNonGenerated(
                 c =>

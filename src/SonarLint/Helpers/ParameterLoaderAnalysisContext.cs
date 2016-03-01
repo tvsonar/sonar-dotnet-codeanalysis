@@ -26,11 +26,11 @@ using System.Collections.Generic;
 
 namespace SonarLint.Helpers
 {
-    public class WrappingAnalysisContext
+    public class ParameterLoaderAnalysisContext
     {
         private readonly AnalysisContext context;
 
-        public WrappingAnalysisContext(AnalysisContext context)
+        public ParameterLoaderAnalysisContext(AnalysisContext context)
         {
             this.context = context;
         }

@@ -62,7 +62,7 @@ namespace SonarLint.Rules.CSharp
             "The maximum authorized complexity in function", DefaultValueMaximum)]
         public int Maximum { get; set; } = DefaultValueMaximum;
 
-        public override void Initialize(WrappingAnalysisContext context)
+        public override void Initialize(ParameterLoaderAnalysisContext context)
         {
             context.RegisterSyntaxNodeActionInNonGenerated(
                 c => CheckComplexity<MethodDeclarationSyntax>(c, m => m.Identifier.GetLocation()),

@@ -61,7 +61,7 @@ namespace SonarLint.Rules.CSharp
             DefaultValueConvention)]
         public string Convention { get; set; } = DefaultValueConvention;
 
-        public override void Initialize(WrappingAnalysisContext context)
+        public override void Initialize(ParameterLoaderAnalysisContext context)
         {
             context.RegisterSyntaxNodeActionInNonGenerated(
                 c =>

@@ -67,7 +67,7 @@ namespace SonarLint.Rules.CSharp
             SyntaxKind.ObjectInitializerExpression,
             SyntaxKind.InvocationExpression);
 
-        public override void Initialize(WrappingAnalysisContext context)
+        public override void Initialize(ParameterLoaderAnalysisContext context)
         {
             context.RegisterSyntaxTreeActionInNonGenerated(
                 c =>

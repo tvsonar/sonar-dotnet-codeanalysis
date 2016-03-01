@@ -74,7 +74,7 @@ namespace SonarLint.Rules.CSharp
             SyntaxKind.RemoveAccessorDeclaration
         };
 
-        public override void Initialize(WrappingAnalysisContext context) =>
+        public override void Initialize(ParameterLoaderAnalysisContext context) =>
             context.RegisterSyntaxNodeActionInNonGenerated(c => CheckFunctionNestingDepth(c), FunctionKinds);
 
         private void CheckFunctionNestingDepth(SyntaxNodeAnalysisContext context)

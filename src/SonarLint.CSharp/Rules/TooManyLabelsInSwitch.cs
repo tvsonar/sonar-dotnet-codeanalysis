@@ -60,7 +60,7 @@ namespace SonarLint.Rules.CSharp
         [RuleParameter("maximum", PropertyType.Integer, "Maximum number of case", DefaultValueMaximum)]
         public int Maximum { get; set; } = DefaultValueMaximum;
 
-        public override void Initialize(WrappingAnalysisContext context)
+        public override void Initialize(ParameterLoaderAnalysisContext context)
         {
             context.RegisterSyntaxNodeActionInNonGenerated(
                 c =>

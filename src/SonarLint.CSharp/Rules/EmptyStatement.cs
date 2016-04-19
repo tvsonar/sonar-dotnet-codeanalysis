@@ -35,6 +35,11 @@ namespace SonarLint.Rules.CSharp
     [Tags(Tag.Cert, Tag.Misra, Tag.Unused)]
     public class EmptyStatement : SonarDiagnosticAnalyzer
     {
+        public EmptyStatement()
+        {
+
+        }
+
         internal const string DiagnosticId = "S1116";
         internal const string Title = "Empty statements should be removed";
         internal const string Description =

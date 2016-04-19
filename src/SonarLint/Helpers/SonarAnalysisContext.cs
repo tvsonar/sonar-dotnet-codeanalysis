@@ -24,18 +24,23 @@ using System.Collections.Immutable;
 using System.Linq;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Diagnostics;
+using System.Collections.Generic;
 
 namespace SonarLint.Helpers
 {
     public class SonarAnalysisContext
     {
         private readonly AnalysisContext context;
+        private readonly DiagnosticAnalyzer analyzer;
+
         public static Func<SyntaxTree, bool> ShouldAnalysisBeDisabled { get; set; }
+        public static ISet<Type> DisabledRules { get; set; } = new HashSet<Type>();
 
 
-        public SonarAnalysisContext(AnalysisContext context)
+        public SonarAnalysisContext(AnalysisContext context, DiagnosticAnalyzer analyzer)
         {
             this.context = context;
+            this.analyzer = analyzer;
         }
 
         public void RegisterCodeBlockAction(Action<CodeBlockAnalysisContext> action)
@@ -169,6 +174,11 @@ namespace SonarLint.Helpers
 
         protected virtual bool IsAnalysisDisabled(SyntaxTree tree)
         {
+            if (DisabledRules.Contains(analyzer.GetType()))
+            {
+                return true;
+            }
+
             if (ShouldAnalysisBeDisabled == null)
             {
                 return false;

@@ -38,6 +38,12 @@ namespace SonarLint.Rules.CSharp
     [Tags(Tag.Pitfall)]
     public class AsyncAwaitIdentifier : SonarDiagnosticAnalyzer
     {
+        public AsyncAwaitIdentifier()
+        {
+                
+        }
+
+
         internal const string DiagnosticId = "S2306";
         internal const string Title = "\"async\" and \"await\" should not be used as identifiers";
         internal const string Description =
@@ -55,11 +61,13 @@ namespace SonarLint.Rules.CSharp
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, Category,
                 RuleSeverity.ToDiagnosticSeverity(), IsActivatedByDefault,
                 helpLinkUri: DiagnosticId.GetHelpLink(),
-                description: Description);
+                description: Description,
+                customTags: WellKnownDiagnosticTags.NotConfigurable);
 
         private static readonly IImmutableSet<string> AsyncOrAwait = ImmutableHashSet.Create("async", "await");
 
-        public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get { return ImmutableArray.Create(Rule); } }
+        public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get
+            { return ImmutableArray.Create(Rule); } }
 
         protected override void Initialize(SonarAnalysisContext context)
         {

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>SonarLint</id>
+    <version>2.0.0</version>
+    <title>SonarLint</title>
+    <authors>SonarSource</authors>
+    <owners>SonarSource</owners>
+    <licenseUrl>https://raw.githubusercontent.com/SonarSource-VisualStudio/sonaranalyzer-csharp/master/LICENSE</licenseUrl>
+    <projectUrl>http://vs.sonarlint.org</projectUrl>
+    <iconUrl>http://dist.sonarsource.com/csharp/download/waves-sonarqube-48.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Redirect to SonarAnalyzer.CSharp or SonarAnalyzer.VisualBasic</summary>
+    <description>Depricated, use SonarAnalyzer.CSharp or SonarAnalyzer.VisualBasic instead</description>
+    <releaseNotes></releaseNotes>
+    <language>en-US</language>
+    <copyright>Copyright © 2015-2016 SonarSource SA</copyright>
+    <tags>Roslyn Analyzers Refactoring CodeAnalysis</tags>
+    <developmentDependency>true</developmentDependency>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="tools\*.ps1" target="tools\" />
+  </files>
+</package>

@@ -33,6 +33,7 @@ using SonarLint.Helpers.FlowAnalysis.Common;
 
 namespace SonarLint.Rules.CSharp
 {
+    using Microsoft.CodeAnalysis.Text;
     using System;
     using LiveVariableAnalysis = Helpers.FlowAnalysis.CSharp.LiveVariableAnalysis;
 
@@ -288,7 +289,15 @@ namespace SonarLint.Rules.CSharp
                     !liveOut.Contains(symbol) &&
                     !IsUnusedLocal(symbol))
                 {
-                    context.ReportDiagnostic(Diagnostic.Create(Rule, declarator.Initializer.EqualsToken.GetLocation(), symbol.Name));
+                    var line = GetLineOfToken(declarator.Initializer.EqualsToken, declarator.SyntaxTree);
+                    var rightSingleLine = line.Span.Intersection(declarator.Initializer.Span);
+
+                    var location = Location.Create(declarator.SyntaxTree,
+                        TextSpan.FromBounds(
+                            declarator.Initializer.EqualsToken.SpanStart,
+                            rightSingleLine.HasValue ? rightSingleLine.Value.End : declarator.Initializer.EqualsToken.Span.End));
+
+                    context.ReportDiagnostic(Diagnostic.Create(Rule, location, symbol.Name));
                 }
                 liveOut.Remove(symbol);
             }
@@ -368,10 +377,23 @@ namespace SonarLint.Rules.CSharp
                 if (LiveVariableAnalysis.IsLocalScoped(symbol, declaration) &&
                     !outState.Contains(symbol))
                 {
-                    context.ReportDiagnostic(Diagnostic.Create(Rule, assignment.OperatorToken.GetLocation(), symbol.Name));
+                    var line = GetLineOfToken(assignment.OperatorToken, assignment.SyntaxTree);
+                    var rightSingleLine = line.Span.Intersection(TextSpan.FromBounds(assignment.OperatorToken.SpanStart, assignment.Right.Span.End));
+
+                    var location = Location.Create(assignment.SyntaxTree,
+                        TextSpan.FromBounds(
+                            assignment.OperatorToken.SpanStart,
+                            rightSingleLine.HasValue ? rightSingleLine.Value.End : assignment.OperatorToken.Span.End));
+
+                    context.ReportDiagnostic(Diagnostic.Create(Rule, location, symbol.Name));
                 }
 
                 assignmentLhs.Add(left);
+            }
+
+            private static TextLine GetLineOfToken(SyntaxToken token, SyntaxTree tree)
+            {
+                return tree.GetText().Lines[token.GetLocation().GetLineSpan().StartLinePosition.Line];
             }
         }
     }

@@ -23,7 +23,7 @@ namespace Tests.Diagnostics
     {
         void calculateRate(int a, int b)
         {
-            b = doSomething(); // Noncompliant; parameter not used later
+            b = doSomething(); // Compliant, S1172 already reports on the parameter
 
             int i, j;
             i = a + 12;

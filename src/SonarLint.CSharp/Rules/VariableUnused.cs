@@ -29,6 +29,7 @@ using Microsoft.CodeAnalysis.Diagnostics;
 using SonarLint.Common;
 using SonarLint.Common.Sqale;
 using SonarLint.Helpers;
+using SonarLint.Helpers.FlowAnalysis.CSharp;
 
 namespace SonarLint.Rules.CSharp
 {
@@ -67,7 +68,7 @@ namespace SonarLint.Rules.CSharp
                 cbc.RegisterSyntaxNodeAction(c =>
                 {
                     unusedLocals.AddRange(
-                        ((LocalDeclarationStatementSyntax) c.Node).Declaration.Variables
+                        ((LocalDeclarationStatementSyntax)c.Node).Declaration.Variables
                             .Select(variable => c.SemanticModel.GetDeclaredSymbol(variable))
                             .Where(symbol => symbol != null));
                 },
@@ -75,7 +76,7 @@ namespace SonarLint.Rules.CSharp
 
                 cbc.RegisterSyntaxNodeAction(c =>
                 {
-                    var symbolsToNotReportOn = GetPossiblyUsedSymbols(c.Node, c.SemanticModel);
+                    var symbolsToNotReportOn = GetPossiblyUsedSymbols((IdentifierNameSyntax)c.Node, c.SemanticModel);
 
                     foreach (var symbol in symbolsToNotReportOn)
                     {
@@ -94,9 +95,14 @@ namespace SonarLint.Rules.CSharp
             });
         }
 
-        internal static IEnumerable<ISymbol> GetPossiblyUsedSymbols(SyntaxNode node, SemanticModel semanticModel)
+        internal static IEnumerable<ISymbol> GetPossiblyUsedSymbols(IdentifierNameSyntax identifier, SemanticModel semanticModel)
         {
-            var symbolInfo = semanticModel.GetSymbolInfo(node);
+            if (IsWritten(identifier))
+            {
+                yield break;
+            }
+
+            var symbolInfo = semanticModel.GetSymbolInfo(identifier);
             if (symbolInfo.Symbol != null)
             {
                 yield return symbolInfo.Symbol;
@@ -107,5 +113,29 @@ namespace SonarLint.Rules.CSharp
                 yield return candidate;
             }
         }
+
+        private static bool IsWritten(IdentifierNameSyntax identifier)
+        {
+            if (LiveVariableAnalysis.IsOutArgument(identifier))
+            {
+                return true;
+            }
+
+            var expression = identifier.GetSelfOrTopParenthesizedExpression();
+
+            var assignment = expression.Parent as AssignmentExpressionSyntax;
+            if (assignment != null)
+            {
+                return assignment.Left == expression;
+            }
+
+            return IncrementDecramentKinds.Contains(expression.Parent.Kind());
+        }
+
+        private static readonly ISet<SyntaxKind> IncrementDecramentKinds = ImmutableHashSet.Create(
+            SyntaxKind.PostDecrementExpression,
+            SyntaxKind.PostIncrementExpression,
+            SyntaxKind.PreDecrementExpression,
+            SyntaxKind.PreIncrementExpression);
     }
 }

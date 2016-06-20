@@ -47,6 +47,22 @@ namespace Tests.Diagnostics
         void F2(int a)
         {
         }
+
+        void OnlyAssigned()
+        {
+            var x = 10; // Noncompliant
+            x += 12;
+            x = 42;
+            x++;
+        }
+
+        void NotOnlyAssigned()
+        {
+            var x = 10;
+            Console.WriteLine(x);
+
+            x = 42;
+        }
     }
 
     internal class Cl : List<object>

@@ -49,13 +49,16 @@ namespace Tests.Diagnostics
                 resource.DoSomething();
             }
 
-            var x
-                = 10; // Noncompliant
+            var x = 10;
+            Console.WriteLine(x);
+            x = 10; // Noncompliant
             var y =
                 x = 11; // Noncompliant
             Console.WriteLine(y);
 
             int k = 12; // Noncompliant
+            k = 13;
+            Console.WriteLine(k);
             X(out k);   // Compliant, not reporting on out parameters
         }
         void X(out int i) { i = 10; }
@@ -203,7 +206,9 @@ namespace Tests.Diagnostics
             };
 
             var x = l; // Noncompliant
-            x = null;  // Noncompliant
+            x = null;
+
+            Console.WriteLine(x);
 
             return func();
         }
@@ -215,7 +220,8 @@ namespace Tests.Diagnostics
             return (() =>
             {
                 var k = 10; // Noncompliant
-                k = 12; // Noncompliant
+                k = 12;
+                Console.WriteLine(k);
                 return (l = new List<int>(new[] { i })); // l captured here
             })();
         }
@@ -288,7 +294,11 @@ namespace Tests.Diagnostics
             var x = 5; // Compliant, S1481 already reports on it.
 
             var y = 5; // Noncompliant
-            y = 6; // Noncompliant
+            y = 6;
+            Console.WriteLine(y);
+
+            var z = 5; // Compliant, only assignments, so S1481 already reports on it.
+            z = 6;
         }
     }
 }

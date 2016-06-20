@@ -250,7 +250,8 @@ namespace SonarLint.Rules.CSharp
                 if (left.IsKind(SyntaxKind.IdentifierName))
                 {
                     var symbol = context.SemanticModel.GetSymbolInfo(left).Symbol;
-                    if (symbol == null)
+                    if (symbol == null ||
+                        IsUnusedLocal(symbol))
                     {
                         return;
                     }
@@ -266,7 +267,8 @@ namespace SonarLint.Rules.CSharp
                 if (left.IsKind(SyntaxKind.IdentifierName))
                 {
                     var symbol = context.SemanticModel.GetSymbolInfo(left).Symbol;
-                    if (symbol == null)
+                    if (symbol == null ||
+                        IsUnusedLocal(symbol))
                     {
                         return;
                     }
@@ -328,7 +330,8 @@ namespace SonarLint.Rules.CSharp
                     operand.IsKind(SyntaxKind.IdentifierName))
                 {
                     var symbol = context.SemanticModel.GetSymbolInfo(operand).Symbol;
-                    if (symbol == null)
+                    if (symbol == null ||
+                        IsUnusedLocal(symbol))
                     {
                         return;
                     }
@@ -348,7 +351,8 @@ namespace SonarLint.Rules.CSharp
                 if (operand.IsKind(SyntaxKind.IdentifierName))
                 {
                     var symbol = context.SemanticModel.GetSymbolInfo(operand).Symbol;
-                    if (symbol == null)
+                    if (symbol == null ||
+                        IsUnusedLocal(symbol))
                     {
                         return;
                     }

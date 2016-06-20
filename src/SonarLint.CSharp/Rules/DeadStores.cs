@@ -33,6 +33,7 @@ using SonarLint.Helpers.FlowAnalysis.Common;
 
 namespace SonarLint.Rules.CSharp
 {
+    using System;
     using LiveVariableAnalysis = Helpers.FlowAnalysis.CSharp.LiveVariableAnalysis;
 
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
@@ -129,14 +130,14 @@ namespace SonarLint.Rules.CSharp
 
             foreach (var block in cfg.Blocks)
             {
-                CheckCfgBlockForDeadStores(block, lva.GetLiveOut(block), declaration, context);
+                CheckCfgBlockForDeadStores(block, lva.GetLiveOut(block), node, declaration, context);
             }
         }
 
-        private static void CheckCfgBlockForDeadStores(Block block, IEnumerable<ISymbol> blockOutState, ISymbol declaration,
+        private static void CheckCfgBlockForDeadStores(Block block, IEnumerable<ISymbol> blockOutState, CSharpSyntaxNode node, ISymbol declaration,
             SyntaxNodeAnalysisContext context)
         {
-            var lva = new InBlockLivenessAnalysis(block, blockOutState, declaration, context);
+            var lva = new InBlockLivenessAnalysis(block, blockOutState, node, declaration, context);
             lva.Analyze();
         }
 
@@ -146,12 +147,14 @@ namespace SonarLint.Rules.CSharp
             private readonly IEnumerable<ISymbol> blockOutState;
             private readonly SyntaxNodeAnalysisContext context;
             private readonly ISymbol declaration;
+            private readonly CSharpSyntaxNode node;
 
-            public InBlockLivenessAnalysis(Block block, IEnumerable<ISymbol> blockOutState, ISymbol declaration,
+            public InBlockLivenessAnalysis(Block block, IEnumerable<ISymbol> blockOutState, CSharpSyntaxNode node, ISymbol declaration,
                 SyntaxNodeAnalysisContext context)
             {
                 this.block = block;
                 this.blockOutState = blockOutState;
+                this.node = node;
                 this.declaration = declaration;
                 this.context = context;
             }
@@ -282,11 +285,29 @@ namespace SonarLint.Rules.CSharp
                 }
 
                 if (declarator.Initializer != null &&
-                    !liveOut.Contains(symbol))
+                    !liveOut.Contains(symbol) &&
+                    !IsUnusedLocal(symbol))
                 {
                     context.ReportDiagnostic(Diagnostic.Create(Rule, declarator.Initializer.EqualsToken.GetLocation(), symbol.Name));
                 }
                 liveOut.Remove(symbol);
+            }
+
+            private bool IsUnusedLocal(ISymbol declaredSymbol)
+            {
+                var identifiers = node.DescendantNodes().OfType<IdentifierNameSyntax>();
+
+                foreach (var identifier in identifiers)
+                {
+                    var usedSymbols = VariableUnused.GetPossiblyUsedSymbols(identifier, context.SemanticModel);
+
+                    if (usedSymbols.Any(s => s.Equals(declaredSymbol)))
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
             }
 
             private void ProcessPrefixExpression(SyntaxNode instruction, HashSet<ISymbol> liveOut)

@@ -24,7 +24,7 @@ using System.Linq;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace SonarAnalyzer.RuleDocGenerator
+namespace SonarAnalyzer.RuleDescriptorGenerator
 {
     public class RuleDetail
     {

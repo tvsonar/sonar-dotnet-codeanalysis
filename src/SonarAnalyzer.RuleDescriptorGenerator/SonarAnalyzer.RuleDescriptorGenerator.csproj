@@ -7,8 +7,8 @@
     <ProjectGuid>{E4D5FF22-C1A4-4CAD-B068-E47817F25848}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SonarAnalyzer.RuleDocGenerator</RootNamespace>
-    <AssemblyName>SonarAnalyzer.RuleDocGenerator.Platform</AssemblyName>
+    <RootNamespace>SonarAnalyzer.RuleDescriptorGenerator</RootNamespace>
+    <AssemblyName>SonarAnalyzer.RuleDescriptorGenerator</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

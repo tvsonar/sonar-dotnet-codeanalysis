@@ -163,9 +163,9 @@
       <Project>{d1ae804f-ae78-4883-b3d6-9e3c4026def6}</Project>
       <Name>SonarAnalyzer.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SonarAnalyzer.RuleDocGenerator.Platform\SonarAnalyzer.RuleDocGenerator.Platform.csproj">
+    <ProjectReference Include="..\..\SonarAnalyzer.RuleDescriptorGenerator\SonarAnalyzer.RuleDescriptorGenerator.csproj">
       <Project>{E4D5FF22-C1A4-4CAD-B068-E47817F25848}</Project>
-      <Name>SonarAnalyzer.RuleDocGenerator.Platform</Name>
+      <Name>SonarAnalyzer.RuleDescriptorGenerator</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\SonarAnalyzer.Scanner\SonarAnalyzer.Scanner.csproj">
       <Project>{79F0B359-8275-4F3B-B919-82C493B74665}</Project>

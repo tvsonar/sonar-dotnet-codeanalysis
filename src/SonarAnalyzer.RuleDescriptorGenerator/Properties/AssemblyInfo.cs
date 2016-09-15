@@ -18,11 +18,8 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02
  */
 
-namespace SonarAnalyzer.RuleDocGenerator
-{
-    public class FullRuleDescriptor
-    {
-        public RuleDetail RuleDescriptor { get; set; }
-        public SqaleDescriptor SqaleDescriptor { get; set; }
-    }
-}
+using System.Reflection;
+
+[assembly: AssemblyTitle("SonarAnalyzer.RuleDescriptorGenerator")]
+[assembly: AssemblyProduct("SonarAnalyzer.RuleDescriptorGenerator")]
+[assembly: AssemblyDescription("")]

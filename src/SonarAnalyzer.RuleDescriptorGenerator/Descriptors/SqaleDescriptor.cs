@@ -21,7 +21,7 @@
 using System.Linq;
 using System.Xml.Serialization;
 
-namespace SonarAnalyzer.RuleDocGenerator
+namespace SonarAnalyzer.RuleDescriptorGenerator
 {
     [XmlType("chc")]
     public class SqaleDescriptor

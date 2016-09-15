@@ -18,35 +18,22 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02
  */
 
-using System.Xml;
+using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace SonarAnalyzer.RuleDocGenerator
+namespace SonarAnalyzer.RuleDescriptorGenerator
 {
-    public class RuleParameter
+    public class SqaleRemediation
     {
-        [XmlElement("key")]
-        public string Key { get; set; }
-        [XmlIgnore]
-        public string Description { get; set; }
-
-        [XmlElement("description")]
-        public XmlCDataSection DescriptionCDataSection
+        public SqaleRemediation()
         {
-            get
-            {
-                return new XmlDocument().CreateCDataSection(Description);
-            }
-            set
-            {
-                Description = value == null ? "" : value.Value;
-            }
+            Properties = new List<SqaleRemediationProperty>();
         }
 
-        [XmlElement("type")]
-        public string Type { get; set; }
+        [XmlElement("rule-key")]
+        public string RuleKey { get; set; }
 
-        [XmlElement("defaultValue")]
-        public string DefaultValue { get; set; }
+        [XmlElement("prop")]
+        public List<SqaleRemediationProperty> Properties { get; set; }
     }
 }

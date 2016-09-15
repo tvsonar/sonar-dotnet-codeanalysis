@@ -28,7 +28,7 @@ using System.Xml.Serialization;
 using SonarAnalyzer.Utilities;
 using SonarAnalyzer.Common;
 
-namespace SonarAnalyzer.RuleDocGenerator
+namespace SonarAnalyzer.RuleDescriptorGenerator
 {
     public static class Program
     {

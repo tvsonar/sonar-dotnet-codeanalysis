@@ -18,19 +18,11 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02
  */
 
-using System.Collections.Generic;
-using System.Xml.Serialization;
-
-namespace SonarAnalyzer.RuleDocGenerator
+namespace SonarAnalyzer.RuleDescriptorGenerator
 {
-    [XmlRoot("sqale", Namespace = "")]
-    public class SqaleRoot
+    public class FullRuleDescriptor
     {
-        public SqaleRoot()
-        {
-            Sqale = new List<SqaleDescriptor>();
-        }
-        [XmlArray("chc")]
-        public List<SqaleDescriptor> Sqale { get; private set; }
+        public RuleDetail RuleDescriptor { get; set; }
+        public SqaleDescriptor SqaleDescriptor { get; set; }
     }
 }

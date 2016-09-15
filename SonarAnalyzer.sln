@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarAnalyzer.Platform.Inte
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SonarQube Integration", "SonarQube Integration", "{F51A8C2A-A0F5-4282-956F-549D05860396}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarAnalyzer.RuleDocGenerator.Platform", "src\SonarAnalyzer.RuleDocGenerator.Platform\SonarAnalyzer.RuleDocGenerator.Platform.csproj", "{E4D5FF22-C1A4-4CAD-B068-E47817F25848}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarAnalyzer.RuleDescriptorGenerator", "src\SonarAnalyzer.RuleDescriptorGenerator\SonarAnalyzer.RuleDescriptorGenerator.csproj", "{E4D5FF22-C1A4-4CAD-B068-E47817F25848}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarAnalyzer.Scanner", "src\SonarAnalyzer.Scanner\SonarAnalyzer.Scanner.csproj", "{79F0B359-8275-4F3B-B919-82C493B74665}"
 EndProject

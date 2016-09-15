@@ -18,29 +18,35 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02
  */
 
-using SonarAnalyzer.Common;
-using System.Collections.Generic;
+using System.Xml;
 using System.Xml.Serialization;
 
-namespace SonarAnalyzer.RuleDocGenerator
+namespace SonarAnalyzer.RuleDescriptorGenerator
 {
-    [XmlRoot("profile", Namespace = "")]
-    public class QualityProfileRoot
+    public class RuleParameter
     {
-        public QualityProfileRoot() { }
-        public QualityProfileRoot(AnalyzerLanguage language)
+        [XmlElement("key")]
+        public string Key { get; set; }
+        [XmlIgnore]
+        public string Description { get; set; }
+
+        [XmlElement("description")]
+        public XmlCDataSection DescriptionCDataSection
         {
-            Rules = new List<QualityProfileRuleDescriptor>();
-            Language = language.ToString();
-            Name = "Sonar way";
+            get
+            {
+                return new XmlDocument().CreateCDataSection(Description);
+            }
+            set
+            {
+                Description = value == null ? "" : value.Value;
+            }
         }
 
-        [XmlElement("language")]
-        public string Language { get; set; }
-        [XmlElement("name")]
-        public string Name { get; set; }
+        [XmlElement("type")]
+        public string Type { get; set; }
 
-        [XmlArray("rules")]
-        public List<QualityProfileRuleDescriptor> Rules { get; private set; }
+        [XmlElement("defaultValue")]
+        public string DefaultValue { get; set; }
     }
 }

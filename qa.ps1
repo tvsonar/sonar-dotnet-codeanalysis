@@ -3,7 +3,7 @@
 del %USERPROFILE%\AppData\Local\Microsoft\MSBuild\14.0\Microsoft.Common.targets\ImportBefore\SonarLint.Testing.ImportBefore.targets 
 
 #nuget restore
-& $env:NUGET_PATH restore SonarLint.sln
+& $env:NUGET_PATH restore SonarAnalyzer.sln
 
 #build tests
 & $env:MSBUILD_PATH /p:configuration=Release /p:DeployExtension=false /p:ZipPackageCompressionLevel=normal /v:m
@@ -44,12 +44,12 @@ git checkout -f $sha1
 
 #move dlls to correct locations
 Write-Host "Installing downloaded dlls"
-Move-Item .\analyzers\*.dll .\src\SonarLint.CSharp\bin\Release -force
+Move-Item .\analyzers\*.dll .\src\SonarAnalyzer.CSharp\bin\Release -force
 
 #run tests
 Write-Host "Start tests"
-& $env:VSTEST_PATH .\src\Tests\SonarLint.SonarQube.Integration.UnitTest\bin\Release\SonarLint.SonarQube.Integration.UnitTest.dll
-& $env:VSTEST_PATH .\src\Tests\SonarLint.UnitTest\bin\Release\SonarLint.UnitTest.dll
+& $env:VSTEST_PATH .\src\Tests\SonarAnalyzer.Platform.Integration.UnitTest\bin\Release\SonarAnalyzer.Platform.Integration.UnitTest.dll
+& $env:VSTEST_PATH .\src\Tests\SonarAnalyzer.UnitTest\bin\Release\SonarAnalyzer.UnitTest.dll
  
 #run regression-test
 Write-Host "Start regression tests"

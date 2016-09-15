@@ -49,8 +49,11 @@ namespace SonarLint.Runner.CSharp
         private readonly Document document;
         private readonly IEnumerable<ClassifiedSpan> classifiedSpans;
 
-        public TokenCollector(Document document, Workspace workspace)
+        private readonly string filePath;
+
+        public TokenCollector(string filePath, Document document, Workspace workspace)
         {
+            this.filePath = filePath;
             this.document = document;
             this.root = document.GetSyntaxRootAsync().Result;
             this.semanticModel = document.GetSemanticModelAsync().Result;
@@ -82,7 +85,7 @@ namespace SonarLint.Runner.CSharp
 
                 var tokenReferenceInfo = new FileTokenReferenceInfo
                 {
-                    FilePath = GetFilePath()
+                    FilePath = filePath
                 };
 
                 foreach (var allReference in allReferences.GroupBy(r => r.Symbol))
@@ -104,7 +107,7 @@ namespace SonarLint.Runner.CSharp
             {
                 var tokenInfo = new FileTokenInfo
                 {
-                    FilePath = GetFilePath()
+                    FilePath = filePath
                 };
 
                 foreach (var classifiedSpan in classifiedSpans)
@@ -199,11 +202,6 @@ namespace SonarLint.Runner.CSharp
                 }
             }
             return null;
-        }
-
-        private string GetFilePath()
-        {
-            return document.FilePath ?? document.Name;
         }
 
         private static readonly IDictionary<string, TokenType> ClassificationTypeMapping = new Dictionary<string, TokenType>

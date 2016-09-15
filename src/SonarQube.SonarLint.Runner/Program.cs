@@ -26,7 +26,6 @@ using System.Xml;
 using Microsoft.CodeAnalysis;
 using SonarLint.Helpers;
 using SonarLint.Common;
-using SonarAnalyzer.Protobuf;
 using System.IO;
 using Google.Protobuf;
 
@@ -34,13 +33,17 @@ namespace SonarLint.Runner
 {
     public static class Program
     {
+        internal const string AnalysisOutputFileName = "analysis-output.xml";
+        internal const string TokenInfosFileName = "token-infos.dat";
+        internal const string TokenReferenceInfosFileName = "token-reference-infos.dat";
+
         public static int Main(string[] args)
         {
             if (args.Length != 3)
             {
                 Write("Expected parameters: ");
                 Write("[Input configuration path]");
-                Write("[Output file path]");
+                Write("[Output folder path]");
                 Write("[AnalyzerLanguage: 'cs' for C#, 'vbnet' for VB.Net]");
 
                 return -1;
@@ -60,7 +63,10 @@ namespace SonarLint.Runner
                 IndentChars = "  "
             };
 
-            using (var xmlOut = XmlWriter.Create(args[1], xmlOutSettings))
+            var outputDirectory = args[1];
+            Directory.CreateDirectory(outputDirectory);
+
+            using (var xmlOut = XmlWriter.Create(Path.Combine(outputDirectory, AnalysisOutputFileName), xmlOutSettings))
             {
                 xmlOut.WriteComment("This XML format is not an API");
                 xmlOut.WriteStartElement("AnalysisOutput");
@@ -68,12 +74,8 @@ namespace SonarLint.Runner
                 xmlOut.WriteStartElement("Files");
                 var currentFileIndex = 0;
 
-                // todo: location should be configurable
-                const string directory = "protobufOut";
-                Directory.CreateDirectory(directory);
-
-                using (var tokenInfoStream = File.Create($@"{directory}\tokenInfos.dat"))
-                using (var tokenReferenceInfoStream = File.Create($@"{directory}\tokenReferenceInfos.dat"))
+                using (var tokenInfoStream = File.Create(Path.Combine(outputDirectory, TokenInfosFileName)))
+                using (var tokenReferenceInfoStream = File.Create(Path.Combine(outputDirectory, TokenReferenceInfosFileName)))
                 {
                     foreach (var file in configuration.Files)
                     {
@@ -90,7 +92,7 @@ namespace SonarLint.Runner
                             var compilation = solution.Projects.First().GetCompilationAsync().Result;
                             var syntaxTree = compilation.SyntaxTrees.First();
 
-                            var tokenCollector = new CSharp.TokenCollector(solution.GetDocument(syntaxTree), solution.Workspace);
+                            var tokenCollector = new CSharp.TokenCollector(file, solution.GetDocument(syntaxTree), solution.Workspace);
 
                             tokenCollector.FileTokenInfo.WriteDelimitedTo(tokenInfoStream);
                             tokenCollector.FileTokenReferenceInfo.WriteDelimitedTo(tokenReferenceInfoStream);
@@ -173,15 +175,6 @@ namespace SonarLint.Runner
                         }
 
                         #endregion
-                    }
-                }
-
-                using (var input = File.OpenRead($@"{directory}\tokenInfos.dat"))
-                {
-                    while (input.Position != input.Length)
-                    {
-                        var x = new FileTokenInfo();
-                        x.MergeDelimitedFrom(input);
                     }
                 }
 

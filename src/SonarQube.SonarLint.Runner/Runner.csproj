@@ -105,11 +105,11 @@
     </Compile>
     <Compile Include="CompilationHelper.cs" />
     <Compile Include="Configuration.cs" />
-    <Compile Include="CSharp\TokenHelper.cs" />
+    <Compile Include="TokenCollector\TokenHelper.cs" />
     <Compile Include="DiagnosticsRunner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CSharp\TokenCollector.cs" />
+    <Compile Include="TokenCollector\TokenCollector.cs" />
     <Compile Include="Protobuf\FileTokenInfo.cs" />
   </ItemGroup>
   <ItemGroup>

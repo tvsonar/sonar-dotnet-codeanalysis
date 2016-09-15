@@ -33,15 +33,21 @@ namespace SonarLint.UnitTest
     [TestClass]
     public class ProgramTest
     {
-        private const string OutputFolderName = "Output";
-        private const string TestInputFolder = "TestResources";
-        private static readonly string ExpectedFilePath = $@"{TestInputFolder}\TestInput.cs";
+        public TestContext TestContext { get; set; }
+
+        internal const string OutputFolderName = "Output";
+        internal const string TestResourcesFolderName = "TestResources";
+        internal const string TestInputFileName = "TestInput";
+        internal const string TestInputPath = TestResourcesFolderName + "\\" + TestInputFileName;
 
         [TestMethod]
         public void End_To_End_CSharp()
         {
-            Program.Main(new [] {
-                $@"{TestInputFolder}\{ParameterLoader.ParameterConfigurationFileName}",
+            var tempInputFilePath = Path.Combine(TestContext.DeploymentDirectory, ParameterLoader.ParameterConfigurationFileName);
+            File.Copy(Path.Combine(TestResourcesFolderName, "SonarLint.Cs.xml"), tempInputFilePath, true);
+
+            Program.Main(new[] {
+                tempInputFilePath,
                 OutputFolderName,
                 AnalyzerLanguage.CSharp.ToString()});
 
@@ -53,13 +59,54 @@ namespace SonarLint.UnitTest
             CheckExpected(textActual);
             CheckNotExpected(textActual);
 
-            var testFileContent = File.ReadAllLines(Path.Combine(TestInputFolder, "TestInput.cs"));
-
-            CheckTokenInfoFile(testFileContent);
-            CheckTokenReferenceFile(testFileContent);
+            CheckCollectedTokens(".cs",
+                new ExpectedTokenInfo
+                {
+                    TokenCount = 34,
+                    DeclarationIndex = 2,
+                    ReferenceCount = 3,
+                    ReferenceIndex = 2
+                });
         }
 
-        private static void CheckTokenReferenceFile(string[] testInputFileLines)
+        [TestMethod]
+        public void End_To_End_VisualBasic()
+        {
+            var tempInputFilePath = Path.Combine(TestContext.DeploymentDirectory, ParameterLoader.ParameterConfigurationFileName);
+            File.Copy(Path.Combine(TestResourcesFolderName, "SonarLint.Vb.xml"), tempInputFilePath, true);
+
+            Program.Main(new[] {
+                tempInputFilePath,
+                OutputFolderName,
+                AnalyzerLanguage.VisualBasic.ToString()});
+
+            CheckCollectedTokens(".vb",
+                new ExpectedTokenInfo
+                {
+                    TokenCount = 31,
+                    DeclarationIndex = 2,
+                    ReferenceCount = 3,
+                    ReferenceIndex = 2
+                });
+        }
+
+        private class ExpectedTokenInfo
+        {
+            public int TokenCount { get; set; }
+            public int DeclarationIndex { get; set; }
+            public int ReferenceCount { get; internal set; }
+            public int ReferenceIndex { get; internal set; }
+        }
+
+        private void CheckCollectedTokens(string extension, ExpectedTokenInfo expectedTokenInfo)
+        {
+            var testFileContent = File.ReadAllLines(TestInputPath + extension);
+
+            CheckTokenInfoFile(testFileContent, extension, expectedTokenInfo);
+            CheckTokenReferenceFile(testFileContent, extension, expectedTokenInfo);
+        }
+
+        private void CheckTokenReferenceFile(string[] testInputFileLines, string extension, ExpectedTokenInfo expectedTokenInfo)
         {
             var refInfos = new List<FileTokenReferenceInfo>();
 
@@ -75,10 +122,10 @@ namespace SonarLint.UnitTest
 
             Assert.AreEqual(1, refInfos.Count);
             var refInfo = refInfos.First();
-            Assert.AreEqual(ExpectedFilePath, refInfo.FilePath);
-            Assert.AreEqual(3, refInfo.Reference.Count);
+            Assert.AreEqual(TestInputPath + extension, refInfo.FilePath);
+            Assert.AreEqual(expectedTokenInfo.ReferenceCount, refInfo.Reference.Count);
 
-            var declarationPosition = refInfo.Reference[2].Declaration;
+            var declarationPosition = refInfo.Reference[expectedTokenInfo.ReferenceIndex].Declaration;
             Assert.AreEqual(declarationPosition.StartLine, declarationPosition.EndLine);
             var tokenText = testInputFileLines[declarationPosition.StartLine - 1].Substring(
                 declarationPosition.StartOffset,
@@ -94,7 +141,7 @@ namespace SonarLint.UnitTest
             Assert.AreEqual("x", tokenText);
         }
 
-        private static void CheckTokenInfoFile(string[] testInputFileLines)
+        private void CheckTokenInfoFile(string[] testInputFileLines, string extension, ExpectedTokenInfo expectedTokenInfo)
         {
             var tokenInfos = new List<FileTokenInfo>();
 
@@ -110,11 +157,11 @@ namespace SonarLint.UnitTest
 
             Assert.AreEqual(1, tokenInfos.Count);
             var token = tokenInfos.First();
-            Assert.AreEqual(ExpectedFilePath, token.FilePath);
-            Assert.AreEqual(34, token.TokenInfo.Count);
-            Assert.AreEqual(TokenType.DeclarationName, token.TokenInfo[2].TokenType);
+            Assert.AreEqual(TestInputPath + extension, token.FilePath);
+            Assert.AreEqual(expectedTokenInfo.TokenCount, token.TokenInfo.Count);
+            Assert.AreEqual(TokenType.DeclarationName, token.TokenInfo[expectedTokenInfo.DeclarationIndex].TokenType);
 
-            var tokenPosition = token.TokenInfo[2].TextRange;
+            var tokenPosition = token.TokenInfo[expectedTokenInfo.DeclarationIndex].TextRange;
             Assert.AreEqual(tokenPosition.StartLine, tokenPosition.EndLine);
             var tokenText = testInputFileLines[tokenPosition.StartLine - 1].Substring(
                 tokenPosition.StartOffset,
@@ -122,11 +169,11 @@ namespace SonarLint.UnitTest
             Assert.AreEqual("TTTestClass", tokenText);
         }
 
-        private static void CheckExpected(string textActual)
+        private void CheckExpected(string textActual)
         {
             var expectedContent = new[]
             {
-                $@"<AnalysisOutput><Files><File><Path>{ExpectedFilePath}</Path>",
+                $@"<AnalysisOutput><Files><File><Path>{TestInputPath}.cs</Path>",
                 @"<Metrics><Lines>17</Lines>",
                 @"<Issue><Id>S1134</Id><Line>3</Line>",
                 @"<Issue><Id>S1135</Id><Line>5</Line>",

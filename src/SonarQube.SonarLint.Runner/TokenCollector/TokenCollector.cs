@@ -20,7 +20,6 @@
 
 using System.Linq;
 using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
 using System.Collections.Generic;
 using Microsoft.CodeAnalysis.Classification;
 using SonarAnalyzer.Protobuf;
@@ -30,7 +29,7 @@ using SonarLint.Helpers;
 using static SonarAnalyzer.Protobuf.FileTokenInfo.Types;
 using static SonarAnalyzer.Protobuf.FileTokenReferenceInfo.Types;
 
-namespace SonarLint.Runner.CSharp
+namespace SonarLint.Runner
 {
     public class TokenCollector
     {
@@ -46,7 +45,6 @@ namespace SonarLint.Runner.CSharp
 
         private readonly SyntaxNode root;
         private readonly SemanticModel semanticModel;
-        private readonly Document document;
         private readonly IEnumerable<ClassifiedSpan> classifiedSpans;
 
         private readonly string filePath;
@@ -54,7 +52,6 @@ namespace SonarLint.Runner.CSharp
         public TokenCollector(string filePath, Document document, Workspace workspace)
         {
             this.filePath = filePath;
-            this.document = document;
             this.root = document.GetSyntaxRootAsync().Result;
             this.semanticModel = document.GetSemanticModelAsync().Result;
             this.classifiedSpans = Classifier.GetClassifiedSpans(semanticModel, root.Span, workspace);
@@ -163,7 +160,8 @@ namespace SonarLint.Runner.CSharp
 
         private SymbolReferenceInfo ProcessToken(SyntaxToken token)
         {
-            if (!token.IsKind(SyntaxKind.IdentifierToken))
+            if (!token.IsKind(Microsoft.CodeAnalysis.CSharp.SyntaxKind.IdentifierToken) &&
+                !token.IsKind(Microsoft.CodeAnalysis.VisualBasic.SyntaxKind.IdentifierToken))
             {
                 // For the time being, we only handle identifer tokens.
                 // We could also handle keywords, such as this, base

@@ -126,6 +126,9 @@
     <Compile Include="..\..\AssemblyInfo.Shared.cs">
       <Link>Properties\AssemblyInfo.Shared.cs</Link>
     </Compile>
+    <None Include="TestResources\SonarLint.Vb.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Content Include="TestResources\TestInput.vb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -139,7 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="TestResources\SonarLint.xml">
+    <None Include="TestResources\SonarLint.Cs.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />

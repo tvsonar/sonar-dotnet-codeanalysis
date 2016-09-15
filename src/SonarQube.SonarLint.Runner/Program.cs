@@ -92,7 +92,7 @@ namespace SonarLint.Runner
                             var compilation = solution.Projects.First().GetCompilationAsync().Result;
                             var syntaxTree = compilation.SyntaxTrees.First();
 
-                            var tokenCollector = new CSharp.TokenCollector(file, solution.GetDocument(syntaxTree), solution.Workspace);
+                            var tokenCollector = new TokenCollector(file, solution.GetDocument(syntaxTree), solution.Workspace);
 
                             tokenCollector.FileTokenInfo.WriteDelimitedTo(tokenInfoStream);
                             tokenCollector.FileTokenReferenceInfo.WriteDelimitedTo(tokenReferenceInfoStream);

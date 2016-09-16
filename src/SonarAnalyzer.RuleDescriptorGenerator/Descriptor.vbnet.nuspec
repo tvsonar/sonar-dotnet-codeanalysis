@@ -7,7 +7,7 @@
     <authors>SonarSource</authors>
     <owners>SonarSource</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description></description>
+    <description>Rule descriptor generator for later use in the VB.NET plugin</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright © 2015-2016 SonarSource SA</copyright>
     <tags></tags>
